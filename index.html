@@ -83,11 +83,39 @@
     padding-bottom: 10px;
     border-bottom: 1px solid var(--rule);
   }
-  .areas { margin: 0; display: grid; gap: 0; }
-  .areas div { padding-block: 16px; border-bottom: 1px solid var(--rule); }
-  .areas div:last-child { border-bottom: 0; }
-  .areas dt { font-weight: 600; letter-spacing: -0.005em; }
-  .areas dd { margin: 2px 0 0; color: var(--muted); }
+  .areas { display: grid; gap: 0; }
+  .area { padding-block: 16px; border-bottom: 1px solid var(--rule); }
+  .area:last-child { border-bottom: 0; }
+  .area > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .area-head { display: grid; gap: 2px; }
+  .area-title { font-weight: 600; letter-spacing: -0.005em; }
+  .area > summary::-webkit-details-marker { display: none; }
+  .area > summary::before {
+    content: "+";
+    font-family: var(--mono);
+    font-weight: 400;
+    color: var(--muted);
+    width: 0.8em;
+  }
+  .area[open] > summary::before { content: "\2212"; }
+  .area > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .area-note { color: var(--muted); }
+  .pub-list {
+    list-style: none;
+    margin: 16px 0 4px;
+    padding: 0 0 0 calc(0.8em + 10px);
+    display: grid;
+    gap: 14px;
+  }
+  .pub-list li { display: grid; gap: 2px; }
+  .pub-list p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+  .meta { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
 
   /* software */
   .repos { display: grid; gap: 14px; }
@@ -140,24 +168,188 @@
 
   <section>
     <h2>Research areas</h2>
-    <dl class="areas">
-      <div>
-        <dt>Discretization technologies</dt>
-        <dd>Solving partial differential equations more efficiently.</dd>
-      </div>
-      <div>
-        <dt>Inverse problems &amp; optimization</dt>
-        <dd>Finding unseen or optimal structures.</dd>
-      </div>
-      <div>
-        <dt>Additive manufacturing</dt>
-        <dd>Certifying and improving 3D printing technologies.</dd>
-      </div>
-      <div>
-        <dt>Scientific machine learning</dt>
-        <dd>Accelerating and improving simulations with modern AI methods.</dd>
-      </div>
-    </dl>
+    <div class="areas">
+      <details class="area">
+        <summary>
+          <span class="area-head">
+            <span class="area-title">Discretization technologies</span>
+            <span class="area-note">Solving partial differential equations more efficiently.</span>
+          </span>
+        </summary>
+        <ul class="pub-list">
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2026.118727">Generalized eigenvalue stabilization for immersed explicit dynamics</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2026</span>
+            <p>Restores usable explicit time steps on badly cut cells by stabilizing the governing eigenvalues.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-025-02704-3">A CFL condition for the finite cell method</a>
+            <span class="meta">Computational Mechanics, 2025</span>
+            <p>Derives the critical time step that explicit time integration must respect on immersed meshes.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.3934/acse.2025007">On the efficiency of explicit and semi-explicit immersed boundary finite element methods for wave propagation problems</a>
+            <span class="meta">Advances in Computational Science and Engineering, 2025</span>
+            <p>Compares explicit and semi-explicit immersed schemes for transient wave problems.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-024-02526-9">The discontinuous strain method: accurately representing fatigue and failure</a>
+            <span class="meta">Computational Mechanics, 2025</span>
+            <p>Represents localized failure through a strain discontinuity instead of a smeared damage band.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2024.02.049">Implicit-explicit time integration for the immersed wave equation</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2024</span>
+            <p>Treats only the small cut cells implicitly, keeping the bulk of the mesh explicit and cheap.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-023-02392-x">From ductile damage to unilateral contact via a point-wise implicit discontinuity</a>
+            <span class="meta">Computational Mechanics, 2024</span>
+            <p>Carries ductile damage through to crack closure and contact within a single formulation.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2022.115575">Efficient multi-level <em>hp</em>-finite elements in arbitrary dimensions</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
+            <p>The data structures and algorithms behind multi-level <em>hp</em>-refinement in any dimension.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s10704-025-00870-2">Competition between arbitrarily oriented tunnel cracks and delamination</a>
+            <span class="meta">International Journal of Fracture, 2025</span>
+            <p>Predicts which damage mode wins as tunnel cracks and delamination compete in laminates.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.compscitech.2022.109729">An efficient stiffness degradation model for layered composites with arbitrarily oriented tunneling and delamination cracks</a>
+            <span class="meta">Composites Science and Technology, 2022</span>
+            <p>A cheap model for how cracking degrades laminate stiffness, without resolving every crack.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.engfracmech.2022.108387">A special finite element method applied to off-axis tunnel cracking in laminates</a>
+            <span class="meta">Engineering Fracture Mechanics, 2022</span>
+            <p>A tailored 2D element that captures three-dimensional off-axis tunnel cracks.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.compositesb.2022.110338">The influence of the fiber–matrix microstructure on the energy release rate of off-axis tunnel cracks in laminates</a>
+            <span class="meta">Composites Part B: Engineering, 2022</span>
+            <p>Quantifies how fiber arrangement at the microscale changes crack driving forces.</p>
+          </li>
+        </ul>
+      </details>
+      <details class="area">
+        <summary>
+          <span class="area-head">
+            <span class="area-title">Inverse problems &amp; optimization</span>
+            <span class="area-note">Finding unseen or optimal structures.</span>
+          </span>
+        </summary>
+        <ul class="pub-list">
+          <li>
+            <a href="https://doi.org/10.1007/s00158-025-04237-y">A memory-efficient adjoint method to enable billion parameter optimization on a single GPU in dynamic problems</a>
+            <span class="meta">Structural and Multidisciplinary Optimization, 2026</span>
+            <p>Removes the memory wall of transient adjoints, putting billion-parameter designs on one GPU.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.116286">Isogeometric multi-resolution full waveform inversion based on the finite cell method</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+            <p>Reconstructs geometry at several resolutions by combining splines with the finite cell method.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.115893">Immersed boundary parametrizations for full waveform inversion</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+            <p>Compares ways of parametrizing an unknown boundary when inverting wave measurements.</p>
+          </li>
+        </ul>
+      </details>
+      <details class="area">
+        <summary>
+          <span class="area-head">
+            <span class="area-title">Additive manufacturing</span>
+            <span class="area-note">Certifying and improving 3D printing technologies.</span>
+          </span>
+        </summary>
+        <ul class="pub-list">
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2026.105206">Temperature control in powder bed fusion of metals via inverse-designed laser beam shapes</a>
+            <span class="meta">Additive Manufacturing, 2026</span>
+            <p>Designs the beam profile itself so that the melt pool follows a prescribed temperature field.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40192-025-00430-5">Quantifying thermal model accuracy in PBF-LB/M using statistical similarity tests against thermographic measurements</a>
+            <span class="meta">Integrating Materials and Manufacturing Innovation, 2025</span>
+            <p>Measures how well thermal simulations match thermography, using statistical similarity tests.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40964-025-01147-9">The trace of heat: on the predictive power of modeling transient diffusion</a>
+            <span class="meta">Progress in Additive Manufacturing, 2025</span>
+            <p>Asks how much of the printed outcome a purely thermal model can actually predict.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40192-024-00382-2">Validity of thermal simulation models for different laser beam shapes in bead-on-plate melting</a>
+            <span class="meta">Integrating Materials and Manufacturing Innovation, 2024</span>
+            <p>Tests thermal models against bead-on-plate experiments across a range of beam shapes.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2023.103609">Laser beam shape optimization in powder bed fusion of metals</a>
+            <span class="meta">Additive Manufacturing, 2023</span>
+            <p>Optimizes the laser intensity distribution to improve melt pool geometry.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00366-022-01719-1">Space-time <em>hp</em>-finite elements for heat evolution in laser powder bed fusion additive manufacturing</a>
+            <span class="meta">Engineering with Computers, 2022</span>
+            <p>Resolves the moving heat source by refining in space and time at once.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/gamm.202100019">On accurate time integration for temperature evolutions in additive manufacturing</a>
+            <span class="meta">GAMM-Mitteilungen, 2021</span>
+            <p>Examines what time integration accuracy is needed for reliable process temperatures.</p>
+          </li>
+        </ul>
+      </details>
+      <details class="area">
+        <summary>
+          <span class="area-head">
+            <span class="area-title">Scientific machine learning</span>
+            <span class="area-note">Accelerating and improving simulations with modern AI methods.</span>
+          </span>
+        </summary>
+        <ul class="pub-list">
+          <li>
+            <a href="https://doi.org/10.1007/s00466-026-02849-9">Lightweight return-mapping surrogates for multiscale plasticity: a practical guide</a>
+            <span class="meta">Computational Mechanics, 2026</span>
+            <p>Replaces the return-mapping step of plasticity with small, reliable learned surrogates.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-026-02796-5">Graph neural networks for full waveform inversion</a>
+            <span class="meta">Computational Mechanics, 2026</span>
+            <p>Learns on the mesh graph to invert wave measurements for unknown material fields.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-025-02600-w">Accelerating full waveform inversion by transfer learning</a>
+            <span class="meta">Computational Mechanics, 2025</span>
+            <p>Reuses networks trained on earlier reconstructions to shorten new inversions.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-023-02434-4">Deep learning in computational mechanics: a review</a>
+            <span class="meta">Computational Mechanics, 2024</span>
+            <p>A methodological survey of where deep learning has, and has not, proven useful in mechanics.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.engappai.2024.108993">Generative adversarial networks enable outlier detection and property monitoring for additive manufacturing of complex structures</a>
+            <span class="meta">Engineering Applications of Artificial Intelligence, 2024</span>
+            <p>Flags anomalous prints and tracks properties from process data using a GAN.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00158-024-03908-6">On neural networks for generating better local optima in topology optimization</a>
+            <span class="meta">Structural and Multidisciplinary Optimization, 2024</span>
+            <p>Uses a neural reparametrization of the design field to escape poor local optima.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.116278">On the use of neural networks for full waveform inversion</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+            <p>Discovers neural reparametrizations for regularization in inverse problems.</p>
+          </li>
+        </ul>
+      </details>
+    </div>
   </section>
 
   <section>
@@ -165,20 +357,11 @@
     <div class="repos">
       <article class="repo repo--thumb">
         <a href="https://github.com/cmpmech/cuwave" tabindex="-1" aria-hidden="true">
-          <img class="thumb" src="assets/cuwave-thumb.png" width="228" height="228" alt="">
+          <img class="thumb" src="assets/cuwave-thumb.png" width="800" height="800" alt="">
         </a>
         <div class="txt">
           <a href="https://github.com/cmpmech/cuwave">cuwave</a>
           <p>Single-GPU differentiable higher-order finite difference wave propagation code.</p>
-        </div>
-      </article>
-      <article class="repo repo--thumb">
-        <a href="https://gitlab.com/hpfem/code/mlhp" tabindex="-1" aria-hidden="true">
-          <img class="thumb" src="assets/mlhp-logo.png" width="96" height="96" alt="">
-        </a>
-        <div class="txt">
-          <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a>
-          <p>Efficient multi-level <em>hp</em>- and other finite element methods in arbitrary dimensions.</p>
         </div>
       </article>
       <article class="repo repo--thumb">
@@ -192,19 +375,48 @@
           <a href="https://link.springer.com/book/10.1007/978-3-031-89529-6">textbook</a> on deep learning for mechanics.</p>
         </div>
       </article>
+      <article class="repo repo--thumb">
+        <a href="https://gitlab.com/hpfem/code/mlhp" tabindex="-1" aria-hidden="true">
+          <img class="thumb" src="assets/mlhp-logo.png" width="96" height="96" alt="">
+        </a>
+        <div class="txt">
+          <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a>
+          <p>Efficient multi-level <em>hp</em>- and other finite element methods in arbitrary dimensions.</p>
+        </div>
+      </article>
+      <article class="repo repo--thumb">
+        <a href="https://github.com/cmpmech/neuralmech" tabindex="-1" aria-hidden="true">
+          <img class="thumb" src="assets/neuralmech-thumb.jpg" width="800" height="800" alt="">
+        </a>
+        <div class="txt">
+          <a href="https://github.com/cmpmech/neuralmech">neuralmech</a>
+          <p>A collection of machine learning enhanced physics solvers and optimizers, answering when and
+          where deep learning is useful in numerical simulation.</p>
+        </div>
+      </article>
+      <article class="repo repo--thumb">
+        <a href="https://gitlab.com/hpfem/code/pbf" tabindex="-1" aria-hidden="true">
+          <img class="thumb" src="assets/pbf-thumb.png" width="48" height="48" alt="">
+        </a>
+        <div class="txt">
+          <a href="https://gitlab.com/hpfem/code/pbf">pbf</a>
+          <p>Convenient thermomechanical simulation of powder bed fusion additive manufacturing processes.</p>
+        </div>
+      </article>
     </div>
   </section>
 
   <section>
     <h2>Publications</h2>
     <p class="pubs">
-      A full list is maintained on the
+      The research areas above list some of our published journal articles. The complete list is
+      maintained on the
       <a href="https://www.uni-weimar.de/en/civil-and-environmental-engineering/chairs/data-engineering/papers/">chair's publication page</a>.
     </p>
   </section>
 
   <footer>
-    <p>Chair of Data Science in Civil Engineering · Bauhaus-Universität Weimar</p>
+    <p><a href="https://www.uni-weimar.de/en/civil-and-environmental-engineering/chairs/data-engineering/announcements/">Chair of Data Science in Civil Engineering</a> · Bauhaus-Universität Weimar</p>
   </footer>
 </main>
 

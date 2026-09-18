@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Computational mechanics research at the Chair of Data Science in Civil Engineering, Bauhaus-Universitat Weimar.">
+<title>Computational Mechanics Weimar</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper:   #fbfbfc;
+    --raised:  #ffffff;
+    --ink:     #12161d;
+    --muted:   #5f6a7a;
+    --rule:    #dfe3e9;
+    --accent:  #0b5fa5;
+    --sans: "IBM Plex Sans", ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:  #0e1116;
+      --raised: #141922;
+      --ink:    #e7eaef;
+      --muted:  #98a3b3;
+      --rule:   #262d38;
+      --accent: #74b4e8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:  #0e1116;
+    --raised: #141922;
+    --ink:    #e7eaef;
+    --muted:  #98a3b3;
+    --rule:   #262d38;
+    --accent: #74b4e8;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: clamp(40px, 9vw, 96px) 64px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(44px, 7vw, 72px);
+  }
+
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* masthead */
+  .masthead { display: flex; flex-direction: column; gap: 14px; }
+  h1 {
+    font-size: clamp(2rem, 6.5vw, 2.9rem);
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0;
+  }
+  .lede { margin: 0; max-width: 34em; color: var(--muted); font-size: 1.0625rem; }
+  .lede strong { color: var(--ink); font-weight: 500; }
+
+  /* research areas */
+  h2 {
+    font-size: 0.72rem;
+    font-family: var(--mono);
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .areas { margin: 0; display: grid; gap: 0; }
+  .areas div { padding-block: 16px; border-bottom: 1px solid var(--rule); }
+  .areas div:last-child { border-bottom: 0; }
+  .areas dt { font-weight: 600; letter-spacing: -0.005em; }
+  .areas dd { margin: 2px 0 0; color: var(--muted); }
+
+  /* software */
+  .repos { display: grid; gap: 14px; }
+  .repo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3px;
+    padding: 16px 18px;
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+  }
+  .repo > a { font-family: var(--mono); font-weight: 500; font-size: 1rem; }
+  .repo a { overflow-wrap: anywhere; }
+  .repo p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+  .repo em { font-style: italic; }
+  .repo--thumb { grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: start; }
+  .repo--thumb .txt { display: grid; gap: 3px; }
+  .repo--thumb .txt > a { font-family: var(--mono); font-weight: 500; font-size: 1rem; }
+  .thumb {
+    width: 76px;
+    height: auto;
+    display: block;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+  }
+
+  .pubs { margin: 0; color: var(--muted); }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <h1>Computational Mechanics</h1>
+    <p class="lede">
+      We are the computational mechanics group at the <strong>Chair of Data Science in Civil
+      Engineering</strong>, Bauhaus-Universität Weimar, led by <strong>Stefan Kollmannsberger</strong>.
+      We build numerical methods — and the code that runs them — for simulating and designing
+      engineering structures.
+    </p>
+  </header>
+
+  <section>
+    <h2>Research areas</h2>
+    <dl class="areas">
+      <div>
+        <dt>Discretization technologies</dt>
+        <dd>Solving partial differential equations more efficiently.</dd>
+      </div>
+      <div>
+        <dt>Inverse problems &amp; optimization</dt>
+        <dd>Finding unseen or optimal structures.</dd>
+      </div>
+      <div>
+        <dt>Additive manufacturing</dt>
+        <dd>Certifying and improving 3D printing technologies.</dd>
+      </div>
+      <div>
+        <dt>Scientific machine learning</dt>
+        <dd>Accelerating and improving simulations with modern AI methods.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Software</h2>
+    <div class="repos">
+      <article class="repo repo--thumb">
+        <a href="https://github.com/cmpmech/cuwave" tabindex="-1" aria-hidden="true">
+          <img class="thumb" src="assets/cuwave-thumb.png" width="228" height="228" alt="">
+        </a>
+        <div class="txt">
+          <a href="https://github.com/cmpmech/cuwave">cuwave</a>
+          <p>Single-GPU differentiable higher-order finite difference wave propagation code.</p>
+        </div>
+      </article>
+      <article class="repo repo--thumb">
+        <a href="https://gitlab.com/hpfem/code/mlhp" tabindex="-1" aria-hidden="true">
+          <img class="thumb" src="assets/mlhp-logo.png" width="96" height="96" alt="">
+        </a>
+        <div class="txt">
+          <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a>
+          <p>Efficient multi-level <em>hp</em>- and other finite element methods in arbitrary dimensions.</p>
+        </div>
+      </article>
+      <article class="repo repo--thumb">
+        <a href="https://link.springer.com/book/10.1007/978-3-031-89529-6" aria-label="Deep Learning in Computational Mechanics on SpringerLink">
+          <img class="thumb" src="assets/dlcm-cover.webp" width="827" height="1246"
+               alt="Cover of the book Deep Learning in Computational Mechanics">
+        </a>
+        <div class="txt">
+          <a href="https://github.com/cmpmech/deep-learning-in-computational-mechanics">deep-learning-in-computational-mechanics</a>
+          <p>Exercises and reference implementations accompanying our introductory course and
+          <a href="https://link.springer.com/book/10.1007/978-3-031-89529-6">textbook</a> on deep learning for mechanics.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <p class="pubs">
+      A full list is maintained on the
+      <a href="https://www.uni-weimar.de/en/civil-and-environmental-engineering/chairs/data-engineering/papers/">chair's publication page</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>Chair of Data Science in Civil Engineering · Bauhaus-Universität Weimar</p>
+  </footer>
+</main>
+
+</body>
+</html>

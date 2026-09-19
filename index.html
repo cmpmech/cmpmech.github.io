@@ -132,6 +132,22 @@
   .repo a { overflow-wrap: anywhere; }
   .repo p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
   .repo em { font-style: italic; }
+  .repo .install {
+    margin-top: 6px;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  .repo .install code {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--ink);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
   .repo--thumb { grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: start; }
   .repo--thumb .txt { display: grid; gap: 3px; }
   .repo--thumb .txt > a { font-family: var(--mono); font-weight: 500; font-size: 1rem; }
@@ -362,6 +378,7 @@
         <div class="txt">
           <a href="https://github.com/cmpmech/cuwave">cuwave</a>
           <p>Single-GPU differentiable higher-order finite difference wave propagation code.</p>
+          <p class="install">Install it with <code>pip install cuwave</code></p>
         </div>
       </article>
       <article class="repo repo--thumb">
@@ -382,6 +399,7 @@
         <div class="txt">
           <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a>
           <p>Efficient multi-level <em>hp</em>- and other finite element methods in arbitrary dimensions.</p>
+          <p class="install">Install it with <code>pip install mlhp</code></p>
         </div>
       </article>
       <article class="repo repo--thumb">
@@ -401,6 +419,7 @@
         <div class="txt">
           <a href="https://gitlab.com/hpfem/code/pbf">pbf</a>
           <p>Convenient thermomechanical simulation of powder bed fusion additive manufacturing processes.</p>
+          <p class="install">Install it with <code>pip install pbf</code></p>
         </div>
       </article>
     </div>

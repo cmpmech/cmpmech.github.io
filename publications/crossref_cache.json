@@ -1,0 +1,920 @@
+{
+ "a cfl condition for the finite cell method": {
+  "doi": "10.1007/s00466-025-02704-3",
+  "journal": "Computational Mechanics",
+  "title": "A CFL condition for the finite cell method",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "a fracture energybased viscoelasticviscoplasticanisotropic damage model for rate dependent cracking of concrete": {
+  "doi": "10.1007/s10704-022-00685-5",
+  "journal": "International Journal of Fracture",
+  "title": "A fracture energy\u2013based viscoelastic\u2013viscoplastic\u2013anisotropic damage model for rate-dependent cracking of concrete",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "a general solution procedure for the scaled boundary finite element method via shooting technique": {
+  "doi": "10.1016/j.cma.2021.113996",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "A general solution procedure for the scaled boundary finite element method via shooting technique",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "a hierarchical computational model for moving thermal loads and phase changes with applications to selective laser melting": {
+  "doi": "10.1016/j.camwa.2017.11.014",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "A hierarchical computational model for moving thermal loads and phase changes with applications to selective laser melting",
+  "type": "journal-article",
+  "year": "2018"
+ },
+ "a memory efficient adjoint method to enable billion parameter optimization on a single gpu in dynamic problems": {
+  "doi": "10.1007/s00158-025-04237-y",
+  "journal": "Structural and Multidisciplinary Optimization",
+  "title": "A memory-efficient adjoint method to enable billion parameter optimization on a single GPU in dynamic problems",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "a plastic damage cracking model for tensorial crack opening": null,
+ "a plastic damage model with mixed isotropickinematic hardening for lowcycle fatigue in 7020 aluminum": {
+  "doi": "10.1111/ffe.14623",
+  "journal": "Fatigue & Fracture of Engineering Materials & Structures",
+  "title": "A Plastic Damage Model With Mixed Isotropic\u2013Kinematic Hardening for Low\u2010Cycle Fatigue in 7020 Aluminum",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "a selection of benchmark problems in solid mechanics and applied mathematics j schroder et al": {
+  "doi": "10.1007/s11831-020-09477-3",
+  "journal": "Archives of Computational Methods in Engineering",
+  "title": "A Selection of Benchmark Problems in Solid Mechanics and Applied Mathematics",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "a shooting approach to the scaled boundary finite element equations of elastodynamics in the frequency domain": {
+  "doi": "10.1016/j.cma.2021.114170",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "A shooting approach to the scaled boundary finite element equations of elastodynamics in the frequency domain",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "a special finite element method applied to off axis tunnel cracking in laminates": {
+  "doi": "10.1016/j.engfracmech.2022.108387",
+  "journal": "Engineering Fracture Mechanics",
+  "title": "A special finite element method applied to off-axis tunnel cracking in laminates",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "a three field phase field model for mixed mode fracture in rock based on experimental determination of the mode ii fracture toughness": {
+  "doi": "10.1007/s00366-022-01684-9",
+  "journal": "Engineering with Computers",
+  "title": "A three-field phase-field model for mixed-mode fracture in rock based on experimental determination of the mode II fracture toughness",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "accelerating full waveform inversion by transfer learning": {
+  "doi": "10.1007/s00466-025-02600-w",
+  "journal": "Computational Mechanics",
+  "title": "Accelerating full waveform inversion by transfer learning",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "accurate prediction of melt pool shapes in laser powder bed fusion by the non linear temperature equation including phase changes model validity isotropic versus anisotropic": {
+  "doi": "10.1007/s40192-019-00132-9",
+  "journal": "Integrating Materials and Manufacturing Innovation",
+  "title": "Accurate Prediction of Melt Pool Shapes in Laser Powder Bed Fusion by the Non-Linear Temperature Equation Including Phase Changes",
+  "type": "journal-article",
+  "year": "2019"
+ },
+ "additive fertigung im bauwesen neue herausforderungen fur numerische simulationsmethoden": null,
+ "additive manufacturing in construction a review on processes applications and digital planning methods": {
+  "doi": "10.1016/j.addma.2019.100894",
+  "journal": "Additive Manufacturing",
+  "title": "Additive manufacturing in construction: A review on processes, applications, and digital planning methods",
+  "type": "journal-article",
+  "year": "2019"
+ },
+ "adhoc 4users guide": null,
+ "advanced physics informed neural networks": {
+  "doi": "10.1007/978-3-031-89529-6_5",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Advanced Physics-Informed Neural Networks",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "an accurate strategy for computing reaction forces and fluxes on trimmed locally refined meshes": {
+  "doi": "10.1093/jom/ufac006",
+  "journal": "Journal of Mechanics",
+  "title": "An accurate strategy for computing reaction forces and fluxes on trimmed locally refined meshes",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "an easy treatment of hanging nodes in hp finite elements": {
+  "doi": "10.1016/j.finel.2016.07.001",
+  "journal": "Finite Elements in Analysis and Design",
+  "title": "An easy treatment of hanging nodes in hp-finite elements",
+  "type": "journal-article",
+  "year": "2016"
+ },
+ "an efficient integration technique for the voxelbased finite cell method": {
+  "doi": "10.1002/nme.4269",
+  "journal": "International Journal for Numerical Methods in Engineering",
+  "title": "An efficient integration technique for the voxel\u2010based finite cell method",
+  "type": "journal-article",
+  "year": "2012"
+ },
+ "an efficient stiffness degradation model for layered composites with arbitrarily oriented tunneling and delamination cracks": {
+  "doi": "10.1016/j.compscitech.2022.109729",
+  "journal": "Composites Science and Technology",
+  "title": "An efficient stiffness degradation model for layered composites with arbitrarily oriented tunneling and delamination cracks",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "an immersed boundary approach for residual stress evaluation in selective laser melting processes": {
+  "doi": "10.1016/j.addma.2021.102077",
+  "journal": "Additive Manufacturing",
+  "title": "An immersed boundary approach for residual stress evaluation in selective laser melting processes",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "an integrated design material and fabrication platform for engineering biomechanically and biologically functional soft tissues": {
+  "doi": "10.1021/acsami.7b08617",
+  "journal": "ACS Applied Materials & Interfaces",
+  "title": "An Integrated Design, Material, and Fabrication Platform for Engineering Biomechanically and Biologically Functional Soft Tissues",
+  "type": "journal-article",
+  "year": "2017"
+ },
+ "analysis of a system of dam foundation reservoir under full loading": null,
+ "bending behavior of additively manufactured lattice structures numerical characterization and experimental validation": null,
+ "bending behavior of octet truss lattice structures modelling options numerical characterization and experimental validation": {
+  "doi": "10.1016/j.matdes.2021.109693",
+  "journal": "Materials & Design",
+  "title": "Bending behavior of octet-truss lattice structures: Modelling options, numerical characterization and experimental validation",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "biofabricated soft network composites for cartilage tissue engineering": {
+  "doi": "10.1088/1758-5090/aa6b15",
+  "journal": "Biofabrication",
+  "title": "Biofabricated soft network composites for cartilage tissue engineering",
+  "type": "journal-article",
+  "year": "2017"
+ },
+ "competition between arbitrarily oriented tunnel cracks and delamination": {
+  "doi": "10.1007/s10704-025-00870-2",
+  "journal": "International Journal of Fracture",
+  "title": "Competition between Arbitrarily Oriented Tunnel Cracks and Delamination",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "computational mechanics meets artificial intelligence": {
+  "doi": "10.1007/978-3-031-89529-6_1",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Computational Mechanics Meets Artificial Intelligence",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "continuous discontinuous analysis of fatigue failure using the discontinuity strain method": null,
+ "data driven plastic return mapping based on homogenization using fft and fe2": null,
+ "deep energy method": {
+  "doi": "10.1007/978-3-030-76587-3_6",
+  "journal": "Studies in Computational Intelligence",
+  "title": "Deep Energy Method",
+  "type": "book-chapter",
+  "year": "2021"
+ },
+ "deep learning in computational mechanics": {
+  "doi": "10.1007/s00466-023-02434-4",
+  "journal": "Computational Mechanics",
+  "title": "Deep learning in computational mechanics: a review",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "deep learning in computational mechanics a review": {
+  "doi": "10.1007/s00466-023-02434-4",
+  "journal": "Computational Mechanics",
+  "title": "Deep learning in computational mechanics: a review",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "deep learning in computational mechanics an introductory course": {
+  "doi": "10.1007/978-3-031-89529-6",
+  "journal": "",
+  "title": "Deep Learning in Computational Mechanics",
+  "type": "book",
+  "year": "2025"
+ },
+ "deep learning in computational mechanics vol 977 of studies in computational intelligence": {
+  "doi": "10.1007/978-3-030-76587-3",
+  "journal": "Studies in Computational Intelligence",
+  "title": "Deep Learning in Computational Mechanics",
+  "type": "book",
+  "year": "2021"
+ },
+ "department of wind energy master report": null,
+ "direct structural analysis of domains defined by point clouds": {
+  "doi": "10.1016/j.cma.2019.112581",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Direct structural analysis of domains defined by point clouds",
+  "type": "journal-article",
+  "year": "2020"
+ },
+ "effect of seismic wave propagation in massed medium on rate dependent anisotropic damage growth in concrete gravity dams": {
+  "doi": "10.1007/s11709-021-0694-z",
+  "journal": "Frontiers of Structural and Civil Engineering",
+  "title": "Effect of seismic wave propagation in massed medium on rate-dependent anisotropic damage growth in concrete gravity dams",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "efficient and accurate numerical quadrature for immersed boundary methods": {
+  "doi": "10.1186/s40323-015-0031-y",
+  "journal": "Advanced Modeling and Simulation in Engineering Sciences",
+  "title": "Efficient and accurate numerical quadrature for immersed boundary methods",
+  "type": "journal-article",
+  "year": "2015"
+ },
+ "efficient finite element quadrature on immersed voxel data": {
+  "doi": "10.21203/rs.3.rs-10093795/v1",
+  "journal": "",
+  "title": "Efficient finite element quadrature on immersed voxel data",
+  "type": "posted-content",
+  "year": "2026"
+ },
+ "efficient multi level hp finite elements in arbitrary dimensions": {
+  "doi": "10.1016/j.cma.2022.115575",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Efficient multi-level hp-finite elements in arbitrary dimensions",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "efficient simulation of crack propagation in complex geometries using a phase field model and the finite cell method": {
+  "doi": "10.23967/admos.2021.038",
+  "journal": "10th International Conference on Adaptative Modeling and Simulation",
+  "title": "Efficient Simulation of Crack Propagation in Complex Geometries using a Phase-Field Model and the Finite Cell Method",
+  "type": "proceedings-article",
+  "year": "2021"
+ },
+ "enforcing essential boundary conditions on domains defined by point clouds": {
+  "doi": "10.1016/j.camwa.2022.03.008",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "Enforcing essential boundary conditions on domains defined by point clouds",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "fatigue prediction for metallic additively manufactured lattice components using fcm based on average strain energy density approach": {
+  "doi": "10.1109/metamaterials62190.2024.10703280",
+  "journal": "2024 Eighteenth International Congress on Artificial Materials for Novel Wave Phenomena (Metamaterials)",
+  "title": "Fatigue prediction for metallic additively manufactured lattice components using FCM based on average strain energy density approach",
+  "type": "proceedings-article",
+  "year": "2024"
+ },
+ "fcmlab a finite cell research toolbox for matlab": {
+  "doi": "10.1016/j.advengsoft.2014.04.004",
+  "journal": "Advances in Engineering Software",
+  "title": "FCMLab: A finite cell research toolbox for MATLAB",
+  "type": "journal-article",
+  "year": "2014"
+ },
+ "fiber bridging in polypropylenereinforced highstrength concrete an experimental and numerical survey": {
+  "doi": "10.1002/suco.202000779",
+  "journal": "Structural Concrete",
+  "title": "Fiber bridging in polypropylene\u2010reinforced high\u2010strength concrete: An experimental and numerical survey",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "finite cell method high order structural dynamics for complex geometries": {
+  "doi": "10.1142/s0219455415400180",
+  "journal": "International Journal of Structural Stability and Dynamics",
+  "title": "Finite Cell Method: High-Order Structural Dynamics for Complex Geometries",
+  "type": "journal-article",
+  "year": "2015"
+ },
+ "fixedgrid fluidstructure interaction in two dimensions based on a partitioned lattice boltzmann and pfem approach": {
+  "doi": "10.1002/nme.2581",
+  "journal": "International Journal for Numerical Methods in Engineering",
+  "title": "Fixed\u2010grid fluid\u2013structure interaction in two dimensions based on a partitioned Lattice Boltzmann and <em>p</em>\u2010FEM approach",
+  "type": "journal-article",
+  "year": "2009"
+ },
+ "fracturing of rocks in bavarian geothermal reservoirsexperimental and numerical investigation of borehole stability": {
+  "doi": "10.5194/egusphere-egu23-14427",
+  "journal": "",
+  "title": "Fracturing of rocks in Bavarian geothermal reservoirs &amp;#8211; Experimental and numerical investigation of borehole stability",
+  "type": "posted-content",
+  "year": "2023"
+ },
+ "from digital to real optimised and functionally integrated shotcrete 3d printing elements for multi storey structures": {
+  "doi": "10.3390/buildings15091461",
+  "journal": "Buildings",
+  "title": "From Digital to Real: Optimised and Functionally Integrated Shotcrete 3D Printing Elements for Multi-Storey Structures",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "from ductile damage to unilateral contact via a point wise implicit discontinuity": {
+  "doi": "10.1007/s00466-023-02392-x",
+  "journal": "Computational Mechanics",
+  "title": "From ductile damage to unilateral contact via a point-wise implicit discontinuity",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "from ductile damage to unilateral contact via a point wise implicit discontinuity a daneshyar et al": {
+  "doi": "10.1007/s00466-023-02392-x",
+  "journal": "Computational Mechanics",
+  "title": "From ductile damage to unilateral contact via a point-wise implicit discontinuity",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "from geometric design to numerical analysis a direct approach using the finite cell method on constructive solid geometry": {
+  "doi": "10.1016/j.camwa.2017.01.027",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "From geometric design to numerical analysis: A direct approach using the Finite Cell Method on Constructive Solid Geometry",
+  "type": "journal-article",
+  "year": "2017"
+ },
+ "full waveform inversion via the scaled boundary finite element method": {
+  "doi": "10.1016/j.cma.2025.118173",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Full-waveform inversion via the scaled boundary finite element method",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "fundamental concepts of machine learning": {
+  "doi": "10.1007/978-3-031-89529-6_2",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Fundamental Concepts of Machine Learning",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "gan enables outlier detection and property monitoring for additive manufacturing of complex structures": {
+  "doi": "10.2139/ssrn.4627723",
+  "journal": "",
+  "title": "Gan Enables Outlier Detection and Property Monitoring for Additive Manufacturing of Complex Structures",
+  "type": "posted-content",
+  "year": "2023"
+ },
+ "generalized eigenvalue stabilization for immersed explicit dynamics": {
+  "doi": "10.1016/j.cma.2026.118727",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Generalized Eigenvalue stabilization for immersed explicit dynamics",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "generating brick like melt pools for laser based powder bed fusion using flexible beam shaping a proof of concept on bead on plate single tracks": {
+  "doi": "10.1016/j.procir.2024.08.216",
+  "journal": "Procedia CIRP",
+  "title": "Generating brick-like melt pools for Laser-Based Powder Bed Fusion using flexible beam shaping: a proof of concept on bead-on-plate single tracks",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "generative adversarial networks enable outlier detection and property monitoring for additive manufacturing of complex structures": {
+  "doi": "10.1016/j.engappai.2024.108993",
+  "journal": "Engineering Applications of Artificial Intelligence",
+  "title": "Generative adversarial networks enable outlier detection and property monitoring for additive manufacturing of complex structures",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "generative artificial intelligence": {
+  "doi": "10.1007/978-3-031-89529-6_8",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Generative Artificial Intelligence",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "geomechanical hydraulic characterisation of the reservoir and its overburden in the north alpine foreland basin se germany": {
+  "doi": "10.1130/abs/2022pr-375963",
+  "journal": "Geological Society of America Abstracts with Programs",
+  "title": "GEOMECHANICAL-HYDRAULIC CHARACTERISATION OF THE RESERVOIR AND ITS OVERBURDEN IN THE NORTH ALPINE FORELAND BASIN, SE GERMANY",
+  "type": "proceedings-article",
+  "year": "2022"
+ },
+ "geomechanical investigations in the north alpine foreland basin se germany": {
+  "doi": "10.1007/978-981-99-9073-3_30",
+  "journal": "Environmental Science and Engineering",
+  "title": "Geomechanical Investigations in the North Alpine Foreland Basin, SE Germany",
+  "type": "book-chapter",
+  "year": "2024"
+ },
+ "geomechanisch hydraulische charakterisierung von tiefengeothermalen reservoiren in bayern": null,
+ "geometric modeling isogeometric analysis and the finite cell method": {
+  "doi": "10.1016/j.cma.2012.05.022",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Geometric modeling, isogeometric analysis and the finite cell method",
+  "type": "journal-article",
+  "year": "2012"
+ },
+ "graph neural networks for full waveform inversion": {
+  "doi": "10.1007/s00466-026-02796-5",
+  "journal": "Computational Mechanics",
+  "title": "Graph neural networks for full waveform inversion",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "hierarchical multigrid approaches for the finite cell method on uniform and multi level hp refined grids": {
+  "doi": "10.1016/j.cma.2021.114075",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Hierarchical multigrid approaches for the finite cell method on uniform and multi-level h p -refined grids",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "hierarchically refined isogeometric analysis of trimmed shells": {
+  "doi": "10.1007/s00466-020-01858-6",
+  "journal": "Computational Mechanics",
+  "title": "Hierarchically refined isogeometric analysis of trimmed shells",
+  "type": "journal-article",
+  "year": "2020"
+ },
+ "image based material characterization of complex microarchitectured additively manufactured structures": {
+  "doi": "10.1016/j.camwa.2020.07.018",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "Image-based material characterization of complex microarchitectured additively manufactured structures",
+  "type": "journal-article",
+  "year": "2020"
+ },
+ "image based numerical characterization and experimental validation of tensile behavior of octet truss lattice structures": {
+  "doi": "10.1016/j.addma.2021.101949",
+  "journal": "Additive Manufacturing",
+  "title": "Image-based numerical characterization and experimental validation of tensile behavior of octet-truss lattice structures",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "immersed boundary parametrizations for full waveform inversion": {
+  "doi": "10.1016/j.cma.2023.115893",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Immersed boundary parametrizations for full waveform inversion",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "implicit explicit time integration for the immersed wave equation": {
+  "doi": "10.1016/j.camwa.2024.02.049",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "Implicit-explicit time integration for the immersed wave equation",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "integrating cad and numerical analysis dirty geometryhandling using the finite cell method": {
+  "doi": "10.1016/j.cma.2019.04.017",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Integrating CAD and numerical analysis: \u2018Dirty geometry\u2019 handling using the Finite Cell Method",
+  "type": "journal-article",
+  "year": "2019"
+ },
+ "introduction to physics informed neural networks": {
+  "doi": "10.1007/978-3-031-89529-6_4",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Introduction to Physics-Informed Neural Networks",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "inverse problems and deep learning": {
+  "doi": "10.1007/978-3-031-89529-6_9",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Inverse Problems and Deep Learning",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "isogeometric multi resolution full waveform inversion based on the finite cell method": {
+  "doi": "10.1016/j.cma.2023.116286",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Isogeometric multi-resolution full waveform inversion based on the finite cell method",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "laser beam shape optimization in powder bed fusion of metals": {
+  "doi": "10.1016/j.addma.2023.103609",
+  "journal": "Additive Manufacturing",
+  "title": "Laser beam shape optimization in powder bed fusion of metals",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "lightweight return mapping surrogates for multiscale plasticity a practical guide": {
+  "doi": "10.1007/s00466-026-02849-9",
+  "journal": "Computational Mechanics",
+  "title": "Lightweight return-mapping surrogates for multiscale plasticity: a practical guide",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "linking fabrication information modeling and finite cell method for simulating the behavior of additively manufactured building components": null,
+ "machine learning in computational mechanics": {
+  "doi": "10.1007/978-3-031-89529-6_6",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Machine Learning in Computational Mechanics",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "machine learning in physics and engineering": {
+  "doi": "10.1007/978-3-030-76587-3_4",
+  "journal": "Studies in Computational Intelligence",
+  "title": "Machine Learning in Physics and Engineering",
+  "type": "book-chapter",
+  "year": "2021"
+ },
+ "machine learning inference limits of routine cement characterization for cem i performance evidence from a multi producer dataset": null,
+ "material modeling with neural networks": {
+  "doi": "10.1007/978-3-031-89529-6_7",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Material Modeling with Neural Networks",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "mechanical properties of additive manufactured metamaterials theoretical and numerical approaches": {
+  "doi": "10.1016/b978-0-443-33953-0.00016-8",
+  "journal": "Additive Manufacturing of Architected Metamaterials",
+  "title": "Mechanical properties of additive-manufactured metamaterials: theoretical and numerical approaches",
+  "type": "book-chapter",
+  "year": "2026"
+ },
+ "methodological overview of deep learning in computational mechanics": {
+  "doi": "10.1007/978-3-031-89529-6_10",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "Methodological Overview of Deep Learning in Computational Mechanics",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "micro ct based finite cell analysis of vertebral bodies a validation study": null,
+ "modeling and experimental validation of an immersed thermo mechanical part scale analysis for laser powder bed fusion processes": {
+  "doi": "10.1016/j.addma.2020.101498",
+  "journal": "Additive Manufacturing",
+  "title": "Modeling and experimental validation of an immersed thermo-mechanical part-scale analysis for laser powder bed fusion processes",
+  "type": "journal-article",
+  "year": "2020"
+ },
+ "modeling composite microstructures for vibration analysis using the finite cell and mortar method": null,
+ "modelling simulation design and testing for additive manufacturing": {
+  "doi": "10.1007/s40964-025-01162-w",
+  "journal": "Progress in Additive Manufacturing",
+  "title": "Editorial\u2014Modelling, simulation, design and testing for additive manufacturing",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "multi level bezier extraction for hierarchical local refinement of isogeometric analysis": {
+  "doi": "10.1016/j.cma.2017.08.017",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Multi-level B\u00e9zier extraction for hierarchical local refinement of Isogeometric Analysis",
+  "type": "journal-article",
+  "year": "2018"
+ },
+ "multi level hp adaptivity high order mesh adaptivity without the difficulties of constraining hanging nodes": {
+  "doi": "10.1007/s00466-014-1118-x",
+  "journal": "Computational Mechanics",
+  "title": "Multi-level hp-adaptivity: high-order mesh adaptivity without the difficulties of constraining hanging nodes",
+  "type": "journal-article",
+  "year": "2015"
+ },
+ "multilevel hpfinite cell method for embedded interface problems with application in biomechanics": {
+  "doi": "10.1002/cnm.2951",
+  "journal": "International Journal for Numerical Methods in Biomedical Engineering",
+  "title": "Multi\u2010level<em>h</em><em>p</em>\u2010finite cell method for embedded interface problems with application in biomechanics",
+  "type": "journal-article",
+  "year": "2018"
+ },
+ "multiscale analysis of high damping composites using the finite cell and the mortar method": {
+  "doi": "10.1142/s0219455421501492",
+  "journal": "International Journal of Structural Stability and Dynamics",
+  "title": "Multiscale Analysis of High Damping Composites Using the Finite Cell and the Mortar Method",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "non standard bone simulation interactive numerical analysis by computational steering": {
+  "doi": "10.1007/s00791-012-0175-y",
+  "journal": "Computing and Visualization in Science",
+  "title": "Non-standard bone simulation: interactive numerical analysis by computational steering",
+  "type": "journal-article",
+  "year": "2011"
+ },
+ "nonlinear response of foundation rock in seismic simulation of concrete gravity dams": null,
+ "normal contact with high order finite elements and a fictitious contact material": {
+  "doi": "10.1016/j.camwa.2015.04.020",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "Normal contact with high order finite elements and a fictitious contact material",
+  "type": "journal-article",
+  "year": "2015"
+ },
+ "numerical evaluation of advanced laser control strategies influence on residual stresses for laser powder bed fusion systems": {
+  "doi": "10.1007/s40192-020-00191-3",
+  "journal": "Integrating Materials and Manufacturing Innovation",
+  "title": "Numerical Evaluation of Advanced Laser Control Strategies Influence on Residual Stresses for Laser Powder Bed Fusion Systems",
+  "type": "journal-article",
+  "year": "2020"
+ },
+ "numerical evaluation of high cycle fatigue life for additively manufactured stainless steel 316l lattice structures preliminary considerations": {
+  "doi": "10.1002/mdp2.249",
+  "journal": "Material Design & Processing Communications",
+  "title": "Numerical evaluation of high cycle fatigue life for additively manufactured stainless steel 316L lattice structures: Preliminary considerations",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "numerical integration of discontinuous functions moment fitting and smart octree": {
+  "doi": "10.1007/s00466-017-1441-0",
+  "journal": "Computational Mechanics",
+  "title": "Numerical integration of discontinuous functions: moment fitting and smart octree",
+  "type": "journal-article",
+  "year": "2017"
+ },
+ "numerical simulation of surface amplification due to inclined harmonic excitation": null,
+ "on accurate time integration for temperature evolutions in additive manufacturing": {
+  "doi": "10.1002/gamm.202100019",
+  "journal": "GAMM-Mitteilungen",
+  "title": "On accurate time integration for temperature evolutions in additive manufacturing",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "on neural networks for generating better local optima in topology optimization": {
+  "doi": "10.1007/s00158-024-03908-6",
+  "journal": "Structural and Multidisciplinary Optimization",
+  "title": "On neural networks for generating better local optima in topology optimization",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "on the efficiency of explicit and semi explicit immersed boundary finite element methods for wave propagation problems": {
+  "doi": "10.3934/acse.2025007",
+  "journal": "Advances in Computational Science and Engineering",
+  "title": "On the efficiency of explicit and semi-explicit immersed boundary finite element methods for wave propagation problems",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "on the radial discretization in the frequency domain sbfem recovering inner subdomain solutions": {
+  "doi": "10.1016/j.cma.2024.116836",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "On the radial discretization in the frequency-domain SBFEM: Recovering inner-subdomain solutions",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "on the radial discretization of finite element spaces in the scaled boundary finite element method": null,
+ "on the use of neural networks for full waveform inversion": {
+  "doi": "10.1016/j.cma.2023.116278",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "On the use of neural networks for full waveform inversion",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "parameterfree weak imposition of dirichlet boundary conditions and coupling of trimmed and nonconforming patches": {
+  "doi": "10.1002/nme.4817",
+  "journal": "International Journal for Numerical Methods in Engineering",
+  "title": "Parameter-free, weak imposition of Dirichlet boundary conditions and coupling of trimmed and non-conforming patches",
+  "type": "journal-article",
+  "year": "2015"
+ },
+ "performance of acceleration techniques for staggered phase field solutions": {
+  "doi": "10.1016/j.cma.2023.116029",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Performance of acceleration techniques for staggered phase-field solutions",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "phase field modeling of brittle fracture with multi level hp fem and the finite cell method": {
+  "doi": "10.1007/s00466-018-1649-7",
+  "journal": "Computational Mechanics",
+  "title": "Phase-field modeling of brittle fracture with multi-level hp-FEM and the finite cell method",
+  "type": "journal-article",
+  "year": "2019"
+ },
+ "physics informed neural networks": {
+  "doi": "10.1007/978-3-030-76587-3_5",
+  "journal": "Studies in Computational Intelligence",
+  "title": "Physics-Informed Neural Networks",
+  "type": "book-chapter",
+  "year": "2021"
+ },
+ "point cloud based elastic reverse time migration for ultrasonic imaging of components with vertical surfaces": {
+  "doi": "10.1016/j.ymssp.2021.108144",
+  "journal": "Mechanical Systems and Signal Processing",
+  "title": "Point cloud-based elastic reverse time migration for ultrasonic imaging of components with vertical surfaces",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "predicting arbitrarily oriented tunnel cracks in composites using a special 2d finite element method": null,
+ "predicting fatigue life of additively manufactured lattice structures using the image based finite cell method and average strain energy density": {
+  "doi": "10.1016/j.matdes.2024.113321",
+  "journal": "Materials & Design",
+  "title": "Predicting fatigue life of additively manufactured lattice structures using the image-based Finite Cell Method and average strain energy density",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "predicting fracture in the proximal humerus using phase field models": {
+  "doi": "10.1016/j.jmbbm.2022.105415",
+  "journal": "Journal of the Mechanical Behavior of Biomedical Materials",
+  "title": "Predicting fracture in the proximal humerus using phase field models",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "quantifying thermal model accuracy in pbf lb m using statistical similarity tests against thermographic measurements": {
+  "doi": "10.1007/s40192-025-00430-5",
+  "journal": "Integrating Materials and Manufacturing Innovation",
+  "title": "Quantifying Thermal Model Accuracy in PBF-LB/M using Statistical Similarity Tests Against Thermographic Measurements",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "quantitative comparison of the total focusing method reverse time migration and full waveform inversion for ultrasonic imaging": {
+  "doi": "10.1016/j.ultras.2025.107705",
+  "journal": "Ultrasonics",
+  "title": "Quantitative comparison of the total focusing method, reverse time migration, and full waveform inversion for ultrasonic imaging",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "quantitative reconstruction of defects in multi layered bonded composites using fully convolutional network based ultrasonic inversion": {
+  "doi": "10.1016/j.jsv.2022.117418",
+  "journal": "Journal of Sound and Vibration",
+  "title": "Quantitative reconstruction of defects in multi-layered bonded composites using fully convolutional network-based ultrasonic inversion",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "reconstructing effective ultrasound transducer models via distributed source inversion": {
+  "doi": "10.1016/j.ultras.2026.108221",
+  "journal": "Ultrasonics",
+  "title": "Reconstructing effective ultrasound transducer models via distributed source inversion",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "robust and parallel scalable iterative solutions for large scale finite cell analyses": {
+  "doi": "10.1016/j.finel.2019.01.009",
+  "journal": "Finite Elements in Analysis and Design",
+  "title": "Robust and parallel scalable iterative solutions for large-scale finite cell analyses",
+  "type": "journal-article",
+  "year": "2019"
+ },
+ "robust numerical integration of embedded solids described in boundary representation": {
+  "doi": "10.1016/j.cma.2023.116670",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Robust numerical integration of embedded solids described in boundary representation",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "scan based fatigue prediction of ded arc additively manufactured steel components": {
+  "doi": "10.1016/j.addma.2026.105243",
+  "journal": "Additive Manufacturing",
+  "title": "Scan-based fatigue prediction of DED-Arc additively manufactured steel components",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "shape optimization of embedded solids using implicit vertex morphing": {
+  "doi": "10.1016/j.cma.2024.116999",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Shape optimization of embedded solids using implicit Vertex-Morphing",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "shell finite cell method a high order fictitious domain approach for thin walled structures": {
+  "doi": "10.1016/j.cma.2011.06.005",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Shell Finite Cell Method: A high order fictitious domain approach for thin-walled structures",
+  "type": "journal-article",
+  "year": "2011"
+ },
+ "smart octrees accurately integrating discontinuous functions in 3d": {
+  "doi": "10.1016/j.cma.2016.04.006",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Smart octrees: Accurately integrating discontinuous functions in 3D",
+  "type": "journal-article",
+  "year": "2016"
+ },
+ "space time continuous galerkin hp finite elements for nonlinear heat problems": null,
+ "space time continuous galerkin petrov hp finite elements": null,
+ "space time hp finite elements for heat evolution in laser powder bed fusion": {
+  "doi": "10.1007/s00366-022-01719-1",
+  "journal": "Engineering with Computers",
+  "title": "Space-time hp-finite elements for heat evolution in laser powder bed fusion additive manufacturing",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "space time hp finite elements for heat evolution in laser powder bed fusion additive manufacturing": {
+  "doi": "10.1007/s00366-022-01719-1",
+  "journal": "Engineering with Computers",
+  "title": "Space-time hp-finite elements for heat evolution in laser powder bed fusion additive manufacturing",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "space time hp finite elements for nonlinear heat problems": null,
+ "space time multi level hp finite elements for heat evolution in laser powder bed fusion additive manufacturing": {
+  "doi": "10.1007/s00366-022-01719-1",
+  "journal": "Engineering with Computers",
+  "title": "Space-time hp-finite elements for heat evolution in laser powder bed fusion additive manufacturing",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "temperature control in powder bed fusion of metals via inverse designed laser beam shapes": {
+  "doi": "10.1016/j.addma.2026.105206",
+  "journal": "Additive Manufacturing",
+  "title": "Temperature control in powder bed fusion of metals via inverse-designed laser beam shapes",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "the discontinuous strain method accurately representing fatigue and failure": {
+  "doi": "10.1007/s00466-024-02526-9",
+  "journal": "Computational Mechanics",
+  "title": "The discontinuous strain method: accurately representing fatigue and failure",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "the finite cell method for linear thermoelasticity": {
+  "doi": "10.1016/j.camwa.2012.09.002",
+  "journal": "Computers & Mathematics with Applications",
+  "title": "The Finite Cell Method for linear thermoelasticity",
+  "type": "journal-article",
+  "year": "2012"
+ },
+ "the finite cell method for simulation of additive manufacturing": {
+  "doi": "10.1007/978-3-030-92672-4_13",
+  "journal": "Lecture Notes in Applied and Computational Mechanics",
+  "title": "The Finite Cell Method for Simulation of Additive Manufacturing",
+  "type": "book-chapter",
+  "year": "2022"
+ },
+ "the finite cell method with least squares stabilized nitsche boundary conditions": {
+  "doi": "10.1016/j.cma.2022.114792",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "The finite cell method with least squares stabilized Nitsche boundary conditions",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "the future of deep learning in computational mechanics": {
+  "doi": "10.1007/978-3-031-89529-6_11",
+  "journal": "Deep Learning in Computational Mechanics",
+  "title": "The Future of Deep Learning in Computational Mechanics",
+  "type": "book-chapter",
+  "year": "2025"
+ },
+ "the influence of the fibermatrix microstructure on the energy release rate of off axis tunnel cracks in laminates": {
+  "doi": "10.1016/j.compositesb.2022.110338",
+  "journal": "Composites Part B: Engineering",
+  "title": "The influence of the fiber\u2013matrix microstructure on the energy release rate of off-axis tunnel cracks in laminates",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "the multi level hp method for three dimensional problems dynamically changing high order mesh refinement with arbitrary hanging nodes": {
+  "doi": "10.1016/j.cma.2016.07.007",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "The multi-levelhp-method for three-dimensional problems: Dynamically changing high-order mesh refinement with arbitrary hanging nodes",
+  "type": "journal-article",
+  "year": "2016"
+ },
+ "the scaled boundary finite element method for dispersive wave propagation in higherorder continua": {
+  "doi": "10.1002/nme.7147",
+  "journal": "International Journal for Numerical Methods in Engineering",
+  "title": "The scaled boundary finite element method for dispersive wave propagation in higher\u2010order continua",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "the trace of heat on the predictive power of modeling transient diffusion": {
+  "doi": "10.1007/s40964-025-01147-9",
+  "journal": "Progress in Additive Manufacturing",
+  "title": "The trace of heat: on the predictive power of modeling transient diffusion",
+  "type": "journal-article",
+  "year": "2025"
+ },
+ "thermal and mechanical properties calibration for concrete arch dams": null,
+ "thermal optimization of additively manufactured lightweight concrete wall elements with internal cellular structure through simulations and measurements": {
+  "doi": "10.3390/buildings12071023",
+  "journal": "Buildings",
+  "title": "Thermal Optimization of Additively Manufactured Lightweight Concrete Wall Elements with Internal Cellular Structure through Simulations and Measurements",
+  "type": "journal-article",
+  "year": "2022"
+ },
+ "towards a meaningful integration of neural networks in computational solid mechanics": null,
+ "transfer learning enhanced full waveform inversion": {
+  "doi": "10.1109/aim46323.2023.10196158",
+  "journal": "2023 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)",
+  "title": "Transfer Learning Enhanced Full Waveform Inversion*",
+  "type": "proceedings-article",
+  "year": "2023"
+ },
+ "two scale analysis of spaceframes with complex additive manufactured nodes": {
+  "doi": "10.1016/j.engstruct.2023.116283",
+  "journal": "Engineering Structures",
+  "title": "Two-scale analysis of spaceframes with complex additive manufactured nodes",
+  "type": "journal-article",
+  "year": "2023"
+ },
+ "uncertainty quantification of microstructure variability and mechanical behavior of additively manufactured lattice structures": {
+  "doi": "10.1016/j.cma.2021.114049",
+  "journal": "Computer Methods in Applied Mechanics and Engineering",
+  "title": "Uncertainty quantification of microstructure variability and mechanical behavior of additively manufactured lattice structures",
+  "type": "journal-article",
+  "year": "2021"
+ },
+ "validity of thermal simulation models for different laser beam shapes in bead on plate melting": {
+  "doi": "10.1007/s40192-024-00382-2",
+  "journal": "Integrating Materials and Manufacturing Innovation",
+  "title": "Validity of Thermal Simulation Models for Different Laser Beam Shapes in Bead-on-Plate Melting",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "viscoplastic modeling the evolving mechanical properties of shotcrete 3d printing material": {
+  "doi": "10.1002/pamm.70094",
+  "journal": "Proceedings in Applied Mathematics and Mechanics",
+  "title": "Viscoplastic Modeling the Evolving Mechanical Properties of Shotcrete 3D Printing Material",
+  "type": "journal-article",
+  "year": "2026"
+ },
+ "wave propagation in a three dimensional half space with semi infinite irregularities": {
+  "doi": "10.1080/17455030.2021.1974602",
+  "journal": "Waves in Random and Complex Media",
+  "title": "Wave propagation in a three-dimensional half-space with semi-infinite irregularities",
+  "type": "journal-article",
+  "year": "2024"
+ },
+ "xfem analysis of fiber bridging in mixed mode crack propagation in composites": {
+  "doi": "10.1016/j.compstruct.2015.02.002",
+  "journal": "Composite Structures",
+  "title": "XFEM analysis of fiber bridging in mixed-mode crack propagation in composites",
+  "type": "journal-article",
+  "year": "2015"
+ }
+}

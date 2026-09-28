@@ -116,6 +116,7 @@
   .pub-list li { display: grid; gap: 2px; }
   .pub-list p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
   .meta { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+  .pub-links { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
 
   /* software */
   .repos { display: grid; gap: 14px; }
@@ -193,6 +194,7 @@
           </span>
         </summary>
         <ul class="pub-list">
+          <!-- pubs:discretization:start -->
           <li>
             <a href="https://doi.org/10.1016/j.cma.2026.118727">Generalized eigenvalue stabilization for immersed explicit dynamics</a>
             <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2026</span>
@@ -209,24 +211,16 @@
             <p>Compares explicit and semi-explicit immersed schemes for transient wave problems.</p>
           </li>
           <li>
+            <a href="https://doi.org/10.1111/ffe.14623">A Plastic Damage Model With Mixed Isotropic–Kinematic Hardening for Low‐Cycle Fatigue in 7020 Aluminum</a>
+            <span class="meta">Fatigue &amp; Fracture of Engineering Materials &amp; Structures, 2025</span>
+            <p>A plastic damage model with mixed hardening that captures low-cycle fatigue in high-strength aluminum.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.14223186">Code</a></span>
+          </li>
+          <li>
             <a href="https://doi.org/10.1007/s00466-024-02526-9">The discontinuous strain method: accurately representing fatigue and failure</a>
             <span class="meta">Computational Mechanics, 2025</span>
             <p>Represents localized failure through a strain discontinuity instead of a smeared damage band.</p>
-          </li>
-          <li>
-            <a href="https://doi.org/10.1016/j.camwa.2024.02.049">Implicit-explicit time integration for the immersed wave equation</a>
-            <span class="meta">Computers &amp; Mathematics with Applications, 2024</span>
-            <p>Treats only the small cut cells implicitly, keeping the bulk of the mesh explicit and cheap.</p>
-          </li>
-          <li>
-            <a href="https://doi.org/10.1007/s00466-023-02392-x">From ductile damage to unilateral contact via a point-wise implicit discontinuity</a>
-            <span class="meta">Computational Mechanics, 2024</span>
-            <p>Carries ductile damage through to crack closure and contact within a single formulation.</p>
-          </li>
-          <li>
-            <a href="https://doi.org/10.1016/j.cma.2022.115575">Efficient multi-level <em>hp</em>-finite elements in arbitrary dimensions</a>
-            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
-            <p>The data structures and algorithms behind multi-level <em>hp</em>-refinement in any dimension.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.10215918">Code</a></span>
           </li>
           <li>
             <a href="https://doi.org/10.1007/s10704-025-00870-2">Competition between arbitrarily oriented tunnel cracks and delamination</a>
@@ -234,20 +228,219 @@
             <p>Predicts which damage mode wins as tunnel cracks and delamination compete in laminates.</p>
           </li>
           <li>
+            <a href="https://doi.org/10.1016/j.camwa.2024.02.049">Implicit-explicit time integration for the immersed wave equation</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2024</span>
+            <p>Treats only the small cut cells implicitly, keeping the bulk of the mesh explicit and cheap.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.116670">Robust numerical integration of embedded solids described in boundary representation</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+            <p>Robust moment-fitting quadrature for cut cells of solids described by boundary meshes.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.17909549">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1080/17455030.2021.1974602">Wave propagation in a three-dimensional half-space with semi-infinite irregularities</a>
+            <span class="meta">Waves in Random and Complex Media, 2024</span>
+            <p>Simulates seismic waves in half-spaces containing semi-infinite irregularities such as valleys.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-023-02392-x">From ductile damage to unilateral contact via a point-wise implicit discontinuity</a>
+            <span class="meta">Computational Mechanics, 2024</span>
+            <p>Carries ductile damage through to crack closure and contact within a single formulation.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2024.116836">On the radial discretization in the frequency-domain SBFEM: Recovering inner-subdomain solutions</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+            <p>Recovers interior solution fields in the scaled boundary method without enlarging the global system.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.116029">Performance of acceleration techniques for staggered phase-field solutions</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+            <p>Compares techniques that speed up the slow staggered iterations of phase-field fracture.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/nme.7147">The scaled boundary finite element method for dispersive wave propagation in higher‐order continua</a>
+            <span class="meta">International Journal for Numerical Methods in Engineering, 2023</span>
+            <p>Extends the scaled boundary method to gradient elasticity, capturing dispersive waves in microstructured media.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s10704-022-00685-5">A fracture energy–based viscoelastic–viscoplastic–anisotropic damage model for rate-dependent cracking of concrete</a>
+            <span class="meta">International Journal of Fracture, 2023</span>
+            <p>Models rate-dependent cracking of concrete by combining viscoelasticity, viscoplasticity and anisotropic damage.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00366-022-01684-9">A three-field phase-field model for mixed-mode fracture in rock based on experimental determination of the mode II fracture toughness</a>
+            <span class="meta">Engineering with Computers, 2022</span>
+            <p>A phase-field model with separate tensile and shear cracks, calibrated against experiments on rock.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.jmbbm.2022.105415">Predicting fracture in the proximal humerus using phase field models</a>
+            <span class="meta">Journal of the Mechanical Behavior of Biomedical Materials, 2022</span>
+            <p>Predicts how the proximal humerus fractures using phase-field models.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2022.115575">Efficient multi-level <em>hp</em>-finite elements in arbitrary dimensions</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
+            <p>The data structures and algorithms behind multi-level <em>hp</em>-refinement in any dimension.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2022.114792">The finite cell method with least squares stabilized Nitsche boundary conditions</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
+            <p>Least-squares stabilized Nitsche boundary conditions for the finite cell method, with error and conditioning bounds.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/suco.202000779">Fiber bridging in polypropylene‐reinforced high‐strength concrete: An experimental and numerical survey</a>
+            <span class="meta">Structural Concrete, 2022</span>
+            <p>Studies fiber bridging in polypropylene-reinforced concrete through experiments and simulations.</p>
+          </li>
+          <li>
             <a href="https://doi.org/10.1016/j.compscitech.2022.109729">An efficient stiffness degradation model for layered composites with arbitrarily oriented tunneling and delamination cracks</a>
             <span class="meta">Composites Science and Technology, 2022</span>
             <p>A cheap model for how cracking degrades laminate stiffness, without resolving every crack.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.5730308">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1093/jom/ufac006">An accurate strategy for computing reaction forces and fluxes on trimmed locally refined meshes</a>
+            <span class="meta">Journal of Mechanics, 2022</span>
+            <p>Computes accurate reaction forces on trimmed, immersed meshes, where classic nodal methods fail.</p>
           </li>
           <li>
             <a href="https://doi.org/10.1016/j.engfracmech.2022.108387">A special finite element method applied to off-axis tunnel cracking in laminates</a>
             <span class="meta">Engineering Fracture Mechanics, 2022</span>
             <p>A tailored 2D element that captures three-dimensional off-axis tunnel cracks.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.4421511">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2022.03.008">Enforcing essential boundary conditions on domains defined by point clouds</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2022</span>
+            <p>Imposes boundary conditions directly on geometries that are given only as point clouds.</p>
           </li>
           <li>
             <a href="https://doi.org/10.1016/j.compositesb.2022.110338">The influence of the fiber–matrix microstructure on the energy release rate of off-axis tunnel cracks in laminates</a>
             <span class="meta">Composites Part B: Engineering, 2022</span>
             <p>Quantifies how fiber arrangement at the microscale changes crack driving forces.</p>
           </li>
+          <li>
+            <a href="https://doi.org/10.1007/s11831-020-09477-3">A Selection of Benchmark Problems in Solid Mechanics and Applied Mathematics</a>
+            <span class="meta">Archives of Computational Methods in Engineering, 2021</span>
+            <p>Benchmark problems in solid mechanics for comparing discretizations and implementations.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-020-01858-6">Hierarchically refined isogeometric analysis of trimmed shells</a>
+            <span class="meta">Computational Mechanics, 2020</span>
+            <p>Local hierarchical refinement for isogeometric analysis of trimmed shells.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-018-1649-7">Phase-field modeling of brittle fracture with multi-level <em>hp</em>-FEM and the finite cell method</a>
+            <span class="meta">Computational Mechanics, 2019</span>
+            <p>Resolves brittle phase-field cracks with multi-level <em>hp</em>-refinement on immersed meshes.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.finel.2019.01.009">Robust and parallel scalable iterative solutions for large-scale finite cell analyses</a>
+            <span class="meta">Finite Elements in Analysis and Design, 2019</span>
+            <p>Robust iterative solvers that scale in parallel for large finite cell analyses.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2019.04.017">Integrating CAD and numerical analysis: ‘Dirty geometry’ handling using the Finite Cell Method</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2019</span>
+            <p>Simulates directly on flawed CAD geometry, tolerating gaps and overlaps, with the finite cell method.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2017.08.017">Multi-level Bézier extraction for hierarchical local refinement of Isogeometric Analysis</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2018</span>
+            <p>Multi-level Bézier extraction for hierarchical local refinement in isogeometric analysis.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/cnm.2951">Multi-level <em>hp</em>-finite cell method for embedded interface problems with application in biomechanics</a>
+            <span class="meta">International Journal for Numerical Methods in Biomedical Engineering, 2018</span>
+            <p>Resolves material interfaces in complex geometry with the multi-level <em>hp</em> finite cell method, applied to biomechanics.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-017-1441-0">Numerical integration of discontinuous functions: moment fitting and smart octree</a>
+            <span class="meta">Computational Mechanics, 2017</span>
+            <p>Integrates discontinuous functions in cut cells by combining moment fitting with smart octrees.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2017.01.027">From geometric design to numerical analysis: A direct approach using the Finite Cell Method on Constructive Solid Geometry</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2017</span>
+            <p>Analyzes constructive solid geometry models directly with the finite cell method, without meshing.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2016.04.006">Smart octrees: Accurately integrating discontinuous functions in 3D</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2016</span>
+            <p>Integrates discontinuous functions accurately in 3D with octrees that follow the geometry.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2016.07.007">The multi-level <em>hp</em>-method for three-dimensional problems: dynamically changing high-order mesh refinement with arbitrary hanging nodes</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2016</span>
+            <p>Multi-level <em>hp</em>-refinement in 3D with arbitrary hanging nodes and dynamically changing meshes.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.finel.2016.07.001">An easy treatment of hanging nodes in <em>hp</em>-finite elements</a>
+            <span class="meta">Finite Elements in Analysis and Design, 2016</span>
+            <p>A simple treatment of hanging nodes in <em>hp</em>-finite elements.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-014-1118-x">Multi-level <em>hp</em>-adaptivity: high-order mesh adaptivity without the difficulties of constraining hanging nodes</a>
+            <span class="meta">Computational Mechanics, 2015</span>
+            <p>High-order mesh adaptivity by superposing refinement levels, avoiding hanging-node constraints.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1186/s40323-015-0031-y">Efficient and accurate numerical quadrature for immersed boundary methods</a>
+            <span class="meta">Advanced Modeling and Simulation in Engineering Sciences, 2015</span>
+            <p>Subdivides cut elements robustly and accurately so that high-order immersed methods keep optimal convergence.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.compstruct.2015.02.002">XFEM analysis of fiber bridging in mixed-mode crack propagation in composites</a>
+            <span class="meta">Composite Structures, 2015</span>
+            <p>Simulates fiber bridging in mixed-mode crack propagation in composites with the extended finite element method.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/nme.4817">Parameter-free, weak imposition of Dirichlet boundary conditions and coupling of trimmed and non-conforming patches</a>
+            <span class="meta">International Journal for Numerical Methods in Engineering, 2015</span>
+            <p>Couples trimmed and non-conforming patches weakly, without penalty parameters or extra unknowns.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2015.04.020">Normal contact with high order finite elements and a fictitious contact material</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2015</span>
+            <p>Models normal contact with high-order elements through a fictitious contact material.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.advengsoft.2014.04.004">FCMLab: A finite cell research toolbox for MATLAB</a>
+            <span class="meta">Advances in Engineering Software, 2014</span>
+            <p>FCMLab, an open MATLAB toolbox for finite cell research.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2012.05.022">Geometric modeling, isogeometric analysis and the finite cell method</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2012</span>
+            <p>Connects geometric modeling, isogeometric analysis and the finite cell method.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/nme.4269">An efficient integration technique for the voxel‐based finite cell method</a>
+            <span class="meta">International Journal for Numerical Methods in Engineering, 2012</span>
+            <p>Precomputes cell matrices so that voxel-based finite cell models are cheap to integrate.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2012.09.002">The Finite Cell Method for linear thermoelasticity</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2012</span>
+            <p>Extends the finite cell method to linear thermoelasticity.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2011.06.005">Shell Finite Cell Method: A high order fictitious domain approach for thin-walled structures</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2011</span>
+            <p>A high-order fictitious domain approach for thin-walled structures.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00791-012-0175-y">Non-standard bone simulation: interactive numerical analysis by computational steering</a>
+            <span class="meta">Computing and Visualization in Science, 2011</span>
+            <p>Interactive bone simulation, where results update while the user changes the model.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1002/nme.2581">Fixed-grid fluid–structure interaction in two dimensions based on a partitioned Lattice Boltzmann and <em>p</em>-FEM approach</a>
+            <span class="meta">International Journal for Numerical Methods in Engineering, 2009</span>
+            <p>Couples Lattice Boltzmann flow with <em>p</em>-FEM structures for fluid–structure interaction on fixed grids.</p>
+          </li>
+          <!-- pubs:discretization:end -->
         </ul>
       </details>
       <details class="area">
@@ -258,10 +451,38 @@
           </span>
         </summary>
         <ul class="pub-list">
+          <!-- pubs:inverse:start -->
           <li>
             <a href="https://doi.org/10.1007/s00158-025-04237-y">A memory-efficient adjoint method to enable billion parameter optimization on a single GPU in dynamic problems</a>
             <span class="meta">Structural and Multidisciplinary Optimization, 2026</span>
             <p>Removes the memory wall of transient adjoints, putting billion-parameter designs on one GPU.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.17157434">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.ultras.2026.108221">Reconstructing effective ultrasound transducer models via distributed source inversion</a>
+            <span class="meta">Ultrasonics, 2026</span>
+            <p>Reconstructs an effective transducer model from measured wavefields, without knowing the transducer's internals.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.ultras.2025.107705">Quantitative comparison of the total focusing method, reverse time migration, and full waveform inversion for ultrasonic imaging</a>
+            <span class="meta">Ultrasonics, 2025</span>
+            <p>Compares total focusing, reverse time migration and full waveform inversion on the same ultrasonic data.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2025.118173">Full-waveform inversion via the scaled boundary finite element method</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2025</span>
+            <p>A scaled boundary formulation for inhomogeneous media that makes full waveform inversion highly parallel.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.14551327">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2024.116999">Shape optimization of embedded solids using implicit Vertex-Morphing</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+            <p>Optimizes the shape of complex solids on a fixed grid, avoiding mesh distortion and re-meshing.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2023.115893">Immersed boundary parametrizations for full waveform inversion</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+            <p>Compares ways of parametrizing an unknown boundary when inverting wave measurements.</p>
           </li>
           <li>
             <a href="https://doi.org/10.1016/j.cma.2023.116286">Isogeometric multi-resolution full waveform inversion based on the finite cell method</a>
@@ -269,10 +490,11 @@
             <p>Reconstructs geometry at several resolutions by combining splines with the finite cell method.</p>
           </li>
           <li>
-            <a href="https://doi.org/10.1016/j.cma.2023.115893">Immersed boundary parametrizations for full waveform inversion</a>
-            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
-            <p>Compares ways of parametrizing an unknown boundary when inverting wave measurements.</p>
+            <a href="https://doi.org/10.1016/j.ymssp.2021.108144">Point cloud-based elastic reverse time migration for ultrasonic imaging of components with vertical surfaces</a>
+            <span class="meta">Mechanical Systems and Signal Processing, 2022</span>
+            <p>Images defects in components with vertical surfaces by reverse time migration on point-cloud geometry.</p>
           </li>
+          <!-- pubs:inverse:end -->
         </ul>
       </details>
       <details class="area">
@@ -283,10 +505,26 @@
           </span>
         </summary>
         <ul class="pub-list">
+          <!-- pubs:am:start -->
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2026.105243">Scan-based fatigue prediction of DED-Arc additively manufactured steel components</a>
+            <span class="meta">Additive Manufacturing, 2026</span>
+            <p>Links the scanned as-built surface of arc-deposited steel directly to its fatigue life.</p>
+          </li>
           <li>
             <a href="https://doi.org/10.1016/j.addma.2026.105206">Temperature control in powder bed fusion of metals via inverse-designed laser beam shapes</a>
             <span class="meta">Additive Manufacturing, 2026</span>
             <p>Designs the beam profile itself so that the melt pool follows a prescribed temperature field.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.3390/buildings15091461">From Digital to Real: Optimised and Functionally Integrated Shotcrete 3D Printing Elements for Multi-Storey Structures</a>
+            <span class="meta">Buildings, 2025</span>
+            <p>Follows shotcrete 3D printing of a multi-storey building section from digital design to full-scale fabrication.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40964-025-01147-9">The trace of heat: on the predictive power of modeling transient diffusion</a>
+            <span class="meta">Progress in Additive Manufacturing, 2025</span>
+            <p>Asks how much of the printed outcome a purely thermal model can actually predict.</p>
           </li>
           <li>
             <a href="https://doi.org/10.1007/s40192-025-00430-5">Quantifying thermal model accuracy in PBF-LB/M using statistical similarity tests against thermographic measurements</a>
@@ -294,9 +532,10 @@
             <p>Measures how well thermal simulations match thermography, using statistical similarity tests.</p>
           </li>
           <li>
-            <a href="https://doi.org/10.1007/s40964-025-01147-9">The trace of heat: on the predictive power of modeling transient diffusion</a>
-            <span class="meta">Progress in Additive Manufacturing, 2025</span>
-            <p>Asks how much of the printed outcome a purely thermal model can actually predict.</p>
+            <a href="https://doi.org/10.1016/j.matdes.2024.113321">Predicting fatigue life of additively manufactured lattice structures using the image-based Finite Cell Method and average strain energy density</a>
+            <span class="meta">Materials &amp; Design, 2024</span>
+            <p>Predicts the fatigue life of printed lattices from CT scans, using the finite cell method and strain energy density.</p>
+            <span class="pub-links"><a href="https://zenodo.org/records/17909037">Data</a></span>
           </li>
           <li>
             <a href="https://doi.org/10.1007/s40192-024-00382-2">Validity of thermal simulation models for different laser beam shapes in bead-on-plate melting</a>
@@ -309,15 +548,76 @@
             <p>Optimizes the laser intensity distribution to improve melt pool geometry.</p>
           </li>
           <li>
+            <a href="https://doi.org/10.1016/j.engstruct.2023.116283">Two-scale analysis of spaceframes with complex additive manufactured nodes</a>
+            <span class="meta">Engineering Structures, 2023</span>
+            <p>Condenses complex printed 3D nodes into beam models so that entire space frames can be designed and analyzed.</p>
+          </li>
+          <li>
             <a href="https://doi.org/10.1007/s00366-022-01719-1">Space-time <em>hp</em>-finite elements for heat evolution in laser powder bed fusion additive manufacturing</a>
             <span class="meta">Engineering with Computers, 2022</span>
             <p>Resolves the moving heat source by refining in space and time at once.</p>
           </li>
           <li>
-            <a href="https://doi.org/10.1002/gamm.202100019">On accurate time integration for temperature evolutions in additive manufacturing</a>
-            <span class="meta">GAMM-Mitteilungen, 2021</span>
-            <p>Examines what time integration accuracy is needed for reliable process temperatures.</p>
+            <a href="https://doi.org/10.3390/buildings12071023">Thermal Optimization of Additively Manufactured Lightweight Concrete Wall Elements with Internal Cellular Structure through Simulations and Measurements</a>
+            <span class="meta">Buildings, 2022</span>
+            <p>Optimizes the cellular interior of printed lightweight concrete walls for insulation, validated by measurements.</p>
           </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.matdes.2021.109693">Bending behavior of octet-truss lattice structures: Modelling options, numerical characterization and experimental validation</a>
+            <span class="meta">Materials &amp; Design, 2021</span>
+            <p>Compares modeling options for the bending of printed octet-truss lattices, validated by experiments.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2021.101949">Image-based numerical characterization and experimental validation of tensile behavior of octet-truss lattice structures</a>
+            <span class="meta">Additive Manufacturing, 2021</span>
+            <p>Characterizes the tensile behavior of printed octet-truss lattices from CT images, validated by experiments.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.cma.2021.114049">Uncertainty quantification of microstructure variability and mechanical behavior of additively manufactured lattice structures</a>
+            <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2021</span>
+            <p>Quantifies how microstructural variability in printed lattices propagates to their mechanical behavior.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2020.101498">Modeling and experimental validation of an immersed thermo-mechanical part-scale analysis for laser powder bed fusion processes</a>
+            <span class="meta">Additive Manufacturing, 2020</span>
+            <p>A part-scale thermomechanical model of laser powder bed fusion, validated against experiments.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2020.07.018">Image-based material characterization of complex microarchitectured additively manufactured structures</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2020</span>
+            <p>Characterizes the material behavior of complex printed microarchitectures from CT images.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40192-020-00191-3">Numerical Evaluation of Advanced Laser Control Strategies Influence on Residual Stresses for Laser Powder Bed Fusion Systems</a>
+            <span class="meta">Integrating Materials and Manufacturing Innovation, 2020</span>
+            <p>Compares laser scan speed and power strategies by the residual stresses they leave behind.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.addma.2019.100894">Additive manufacturing in construction: A review on processes, applications, and digital planning methods</a>
+            <span class="meta">Additive Manufacturing, 2019</span>
+            <p>Reviews additive manufacturing processes, applications and digital planning methods in construction.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s40192-019-00132-9">Accurate Prediction of Melt Pool Shapes in Laser Powder Bed Fusion by the Non-Linear Temperature Equation Including Phase Changes</a>
+            <span class="meta">Integrating Materials and Manufacturing Innovation, 2019</span>
+            <p>Predicts melt pool shapes in laser powder bed fusion with a nonlinear heat equation that includes phase changes.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.camwa.2017.11.014">A hierarchical computational model for moving thermal loads and phase changes with applications to selective laser melting</a>
+            <span class="meta">Computers &amp; Mathematics with Applications, 2018</span>
+            <p>A hierarchical model for moving heat sources and phase changes in selective laser melting.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1088/1758-5090/aa6b15">Biofabricated soft network composites for cartilage tissue engineering</a>
+            <span class="meta">Biofabrication, 2017</span>
+            <p>Designs printed fiber networks that reinforce hydrogels for cartilage tissue engineering.</p>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1021/acsami.7b08617">An Integrated Design, Material, and Fabrication Platform for Engineering Biomechanically and Biologically Functional Soft Tissues</a>
+            <span class="meta">ACS Applied Materials &amp; Interfaces, 2017</span>
+            <p>Combines 3D-printed fibers and polymer networks into strong, stretchable engineered tissues.</p>
+          </li>
+          <!-- pubs:am:end -->
         </ul>
       </details>
       <details class="area">
@@ -328,20 +628,24 @@
           </span>
         </summary>
         <ul class="pub-list">
-          <li>
-            <a href="https://doi.org/10.1007/s00466-026-02849-9">Lightweight return-mapping surrogates for multiscale plasticity: a practical guide</a>
-            <span class="meta">Computational Mechanics, 2026</span>
-            <p>Replaces the return-mapping step of plasticity with small, reliable learned surrogates.</p>
-          </li>
+          <!-- pubs:sciml:start -->
           <li>
             <a href="https://doi.org/10.1007/s00466-026-02796-5">Graph neural networks for full waveform inversion</a>
             <span class="meta">Computational Mechanics, 2026</span>
             <p>Learns on the mesh graph to invert wave measurements for unknown material fields.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.17434971">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1007/s00466-026-02849-9">Lightweight return-mapping surrogates for multiscale plasticity: a practical guide</a>
+            <span class="meta">Computational Mechanics, 2026</span>
+            <p>Replaces the return-mapping step of plasticity with small, reliable learned surrogates.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.18522058">Code</a></span>
           </li>
           <li>
             <a href="https://doi.org/10.1007/s00466-025-02600-w">Accelerating full waveform inversion by transfer learning</a>
             <span class="meta">Computational Mechanics, 2025</span>
             <p>Reuses networks trained on earlier reconstructions to shorten new inversions.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.14616639">Code</a></span>
           </li>
           <li>
             <a href="https://doi.org/10.1007/s00466-023-02434-4">Deep learning in computational mechanics: a review</a>
@@ -349,20 +653,28 @@
             <p>A methodological survey of where deep learning has, and has not, proven useful in mechanics.</p>
           </li>
           <li>
-            <a href="https://doi.org/10.1016/j.engappai.2024.108993">Generative adversarial networks enable outlier detection and property monitoring for additive manufacturing of complex structures</a>
-            <span class="meta">Engineering Applications of Artificial Intelligence, 2024</span>
-            <p>Flags anomalous prints and tracks properties from process data using a GAN.</p>
-          </li>
-          <li>
             <a href="https://doi.org/10.1007/s00158-024-03908-6">On neural networks for generating better local optima in topology optimization</a>
             <span class="meta">Structural and Multidisciplinary Optimization, 2024</span>
             <p>Uses a neural reparametrization of the design field to escape poor local optima.</p>
+            <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.12806411">Code</a></span>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.engappai.2024.108993">Generative adversarial networks enable outlier detection and property monitoring for additive manufacturing of complex structures</a>
+            <span class="meta">Engineering Applications of Artificial Intelligence, 2024</span>
+            <p>Flags anomalous prints and tracks properties from process data using a GAN.</p>
+            <span class="pub-links"><a href="https://zenodo.org/records/17909169">Data</a></span>
           </li>
           <li>
             <a href="https://doi.org/10.1016/j.cma.2023.116278">On the use of neural networks for full waveform inversion</a>
             <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
             <p>Discovers neural reparametrizations for regularization in inverse problems.</p>
           </li>
+          <li>
+            <a href="https://doi.org/10.1016/j.jsv.2022.117418">Quantitative reconstruction of defects in multi-layered bonded composites using fully convolutional network-based ultrasonic inversion</a>
+            <span class="meta">Journal of Sound and Vibration, 2023</span>
+            <p>Reconstructs defects in bonded multi-layer composites from ultrasonic signals with a fully convolutional network.</p>
+          </li>
+          <!-- pubs:sciml:end -->
         </ul>
       </details>
     </div>
@@ -428,8 +740,8 @@
   <section>
     <h2>Publications</h2>
     <p class="pubs">
-      The research areas above list some of our published journal articles. The complete list is
-      maintained on the
+      The research areas above list our journal articles from the last five years, together with
+      our most-cited earlier work. The complete list is maintained on the
       <a href="https://www.uni-weimar.de/en/civil-and-environmental-engineering/chairs/data-engineering/papers/">chair's publication page</a>.
     </p>
   </section>

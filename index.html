@@ -59,7 +59,23 @@
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 
   /* masthead */
-  .masthead { display: flex; flex-direction: column; gap: 14px; }
+  .masthead { display: grid; gap: 14px; }
+  .masthead-text { display: grid; gap: 14px; }
+  .hero { margin: 8px 0 0; width: min(100%, 320px); display: grid; gap: 8px; }
+  .hero video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    display: block;
+    background: #000033;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+  }
+  .hero figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+  @media (min-width: 640px) {
+    .masthead { grid-template-columns: minmax(0, 1fr) 208px; column-gap: 32px; align-items: start; }
+    .hero { margin: 0; width: 100%; }
+  }
   h1 {
     font-size: clamp(2rem, 6.5vw, 2.9rem);
     line-height: 1.08;
@@ -174,13 +190,21 @@
 <body>
 <main class="page">
   <header class="masthead">
-    <h1>Computational Mechanics</h1>
-    <p class="lede">
-      We are the computational mechanics group at the <a href="https://www.uni-weimar.de/deib"><strong>Chair of Data Science in Civil
-      Engineering</strong></a>, Bauhaus-Universität Weimar.
-      We build numerical methods — and the code that runs them — for simulating and designing
-      engineering structures.
-    </p>
+    <div class="masthead-text">
+      <h1>Computational Mechanics</h1>
+      <p class="lede">
+        At the <a href="https://www.uni-weimar.de/deib"><strong>Chair of Data Science in Civil Engineering</strong></a>,
+        Bauhaus-Universität Weimar, our research centers on computational mechanics.
+        We build numerical methods — and the code that runs them — for simulating and designing
+        engineering structures.
+      </p>
+    </div>
+    <figure class="hero">
+      <video src="assets/firstlayer.mp4" poster="assets/firstlayer-poster.jpg" width="640" height="640"
+             autoplay muted loop playsinline preload="auto"
+             aria-label="Simulated temperature field and adaptively refined mesh while a laser melts the first layer of a ring"></video>
+      <figcaption>Laser powder bed fusion: the mesh follows the melt pool.</figcaption>
+    </figure>
   </header>
 
   <section>
@@ -750,6 +774,14 @@
     <p><a href="https://www.uni-weimar.de/deib">Chair of Data Science in Civil Engineering</a> · Bauhaus-Universität Weimar</p>
   </footer>
 </main>
+<script>
+  // Respect reduced-motion preferences: show the still poster instead of the animation
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const video = document.querySelector(".hero video");
+    video.removeAttribute("autoplay");
+    video.pause();
+  }
+</script>
 
 </body>
 </html>

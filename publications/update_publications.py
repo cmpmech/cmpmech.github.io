@@ -1,7 +1,7 @@
 """Collect journal publications from Google Scholar and Zenodo and render them into index.html.
 
     python3 publications/update_publications.py                # crawl, merge, render
-    python3 publications/update_publications.py --render-only  # only rebuild index.html
+    python3 publications/update_publications.py --render-only  # only rebuild the pages
 
 Hand-edited files next to this script:
     scholars.csv      People to crawl (name, scholar_id, zenodo_name as "Last, First").
@@ -35,6 +35,8 @@ SCHOLARS_CSV = HERE / "scholars.csv"
 PUBLICATIONS_CSV = HERE / "publications.csv"
 CACHE_JSON = HERE / "crossref_cache.json"
 INDEX_HTML = HERE.parent / "index.html"
+PAGES = [INDEX_HTML, *sorted((HERE.parent / "research").glob("*.html"))]
+TOPICS_DIR = HERE.parent / "research" / "topics"  # sections shared between pages
 
 MIN_YEAR = datetime.date.today().year - 4
 MIN_CITATIONS = 50
@@ -304,45 +306,80 @@ def update():
 
 # ---------------------------------------------------------------- render
 
+def paper_item(r, indent, compact=False):
+    links = [f"<a href=\"{html.escape(url)}\">{label}</a>"
+             for column, label in (("code", "Code"), ("data", "Data"))
+             for url in r[column].split() if url != "-"]
+    title = f"<a href=\"https://doi.org/{r['doi']}\">{r['title']}</a>"
+    if compact:
+        links = f" <span class=\"pub-links\">{' · '.join(links)}</span>" if links else ""
+        return f"{indent}<li>{title}{links}</li>\n"
+    lines = [f"<li>",
+             f"  {title}",
+             f"  <span class=\"meta\">{html.escape(r['journal'])}, {r['year']}</span>"]
+    if r["summary"]:
+        lines.append(f"  <p>{r['summary']}</p>")
+    if links:
+        lines.append(f"  <span class=\"pub-links\">{' · '.join(links)}</span>")
+    lines.append("</li>")
+    return "".join(f"{indent}{line}\n" for line in lines)
+
+
 def render():
-    rows = [{**dict.fromkeys(FIELDS, ""), **r} for r in read_csv(PUBLICATIONS_CSV) if shown(r)]
-    page = INDEX_HTML.read_text(encoding="utf-8")
-    for row in rows:
-        if row["category"] not in CATEGORIES:
+    """Fill every <!-- papers: ... --> ... <!-- /papers --> block in the site's pages.
+
+    "<!-- papers: category=sciml -->" lists the shown papers of a category, newest first.
+    "<!-- papers: 10.1/abc 10.2/def -->" lists exactly these papers, in this order.
+    A leading "compact" ("<!-- papers: compact 10.1/abc -->") shows only titles and links.
+    "<!-- topic: name --> ... <!-- /topic -->" is first replaced by research/topics/name.html,
+    so a section used on several pages is written once.
+    """
+    rows = {r["doi"].lower(): {**dict.fromkeys(FIELDS, ""), **r}
+            for r in read_csv(PUBLICATIONS_CSV)}
+    for row in rows.values():
+        if shown(row) and row["category"] not in CATEGORIES:
             print(f"warning: not shown, category '{row['category']}' is not one of "
                   f"{', '.join(CATEGORIES)}: {row['doi']}  {strip_tags(row['title'])[:60]}")
 
-    for category in CATEGORIES:
-        selected = sorted((r for r in rows if r["category"] == category),
+    def select(spec, page):
+        if spec.startswith("category="):
+            category = spec.removeprefix("category=")
+            return sorted((r for r in rows.values() if shown(r) and r["category"] == category),
                           key=lambda r: (-int(r["year"] or 0), -int(r["citations"] or 0)))
-        items = []
-        for r in selected:
-            summary = f"\n            <p>{r['summary']}</p>" if r["summary"] else ""
-            links = [f"<a href=\"{html.escape(url)}\">{label}</a>"
-                     for column, label in (("code", "Code"), ("data", "Data"))
-                     for url in r[column].split() if url != "-"]
-            if links:
-                summary += f"\n            <span class=\"pub-links\">{' · '.join(links)}</span>"
-            items.append(
-                f"          <li>\n"
-                f"            <a href=\"https://doi.org/{r['doi']}\">{r['title']}</a>\n"
-                f"            <span class=\"meta\">{html.escape(r['journal'])}, {r['year']}"
-                f"</span>{summary}\n"
-                f"          </li>\n")
-        start, end = f"<!-- pubs:{category}:start -->", f"<!-- pubs:{category}:end -->"
-        pattern = re.compile(re.escape(start) + ".*?" + re.escape(end), re.S)
-        if not pattern.search(page):
-            sys.exit(f"Marker {start} not found in {INDEX_HTML.name}")
-        page = pattern.sub(lambda _: f"{start}\n{''.join(items)}          {end}", page)
-        print(f"{category}: {len(selected)} papers")
+        for doi in spec.lower().split():
+            if doi not in rows:
+                sys.exit(f"{page.name}: {doi} is not in {PUBLICATIONS_CSV.name}")
+        return [rows[doi] for doi in spec.lower().split()]
 
-    INDEX_HTML.write_text(page, encoding="utf-8")
+    def include(match):
+        indent, name = match.group(1), match.group(2).strip()
+        source = TOPICS_DIR / f"{name}.html"
+        if not source.exists():
+            sys.exit(f"{page.name}: topic {name} not found ({source})")
+        body = "".join(indent + line if line.strip() else line
+                       for line in source.read_text(encoding="utf-8").splitlines(True))
+        return f"{indent}<!-- topic: {name} -->\n{body}{indent}<!-- /topic -->"
+
+    topics = re.compile(r"^([ \t]*)<!-- topic: (.*?) -->\n.*?^[ \t]*<!-- /topic -->", re.S | re.M)
+    pattern = re.compile(r"^([ \t]*)<!-- papers: (.*?) -->\n.*?^[ \t]*<!-- /papers -->",
+                         re.S | re.M)
+    for page in PAGES:
+        text = topics.sub(include, page.read_text(encoding="utf-8"))
+        def fill(match):
+            indent, spec = match.groups()
+            compact = spec.startswith("compact ")
+            papers = select(spec.removeprefix("compact ").strip(), page)
+            items = "".join(paper_item(r, indent, compact) for r in papers)
+            return f"{indent}<!-- papers: {spec} -->\n{items}{indent}<!-- /papers -->"
+        text, count = pattern.subn(fill, text)
+        page.write_text(text, encoding="utf-8")
+        print(f"{page.relative_to(HERE.parent)}: {count} paper lists")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--render-only", action="store_true",
-                        help="skip crawling, only rebuild index.html from publications.csv")
+                        help="skip crawling, only rebuild the pages from publications.csv")
     if not parser.parse_args().render_only:
         update()
     render()

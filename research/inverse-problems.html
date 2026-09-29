@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Inverse problems &amp; optimization: Finding unseen or optimal structures.">
+<title>Inverse problems &amp; optimization · Computational Mechanics Weimar</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <a class="back" href="../index.html">← Computational Mechanics</a>
+    <h1>Inverse problems &amp; optimization</h1>
+    <p class="lede">Finding unseen or optimal structures.</p>
+  </header>
+
+  <section>
+    <h2>Key works</h2>
+    <div class="topics">
+      <!-- topic: full-waveform-inversion -->
+      <section class="topic">
+        <h3>Full waveform inversion</h3>
+        <p>Full waveform inversion reconstructs hidden defects from ultrasonic wave measurements: the
+        material distribution is adapted until the simulated waves match the measured ones.</p>
+        <figure class="figure">
+          <div class="figure-pair figure-pair--3">
+            <div>
+              <h4>Measurement</h4>
+              <div class="media"><video src="../assets/neuralfwi_wave-light.mp4" data-dark="../assets/neuralfwi_wave-dark.mp4" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Waves travelling through the specimen and scattering at four circular voids, recorded by sensors along the top"></video></div>
+            </div>
+            <div>
+              <h4>Reconstruction</h4>
+              <div class="media"><video src="../assets/neuralfwi_voxel-light.mp4" data-dark="../assets/neuralfwi_voxel-dark.mp4" poster="../assets/neuralfwi_voxel-light.png" data-dark-poster="../assets/neuralfwi_voxel-dark.png" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Pixel-based inversion over the iterations, converging to a noisy reconstruction"></video></div>
+            </div>
+            <div>
+              <h4>Regularization</h4>
+              <div class="media"><video src="../assets/neuralfwi_projection-light.mp4" data-dark="../assets/neuralfwi_projection-dark.mp4" poster="../assets/neuralfwi_projection-light.png" data-dark-poster="../assets/neuralfwi_projection-dark.png" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Inversion with a regularizing projection over the iterations, converging to sharper voids on a cleaner background"></video></div>
+            </div>
+          </div>
+          <figcaption>Full waveform inversion: waves scattered by hidden voids reveal their shape.
+            <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a> · <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+          </figcaption>
+        </figure>
+        <p>The unknown defects can be described with <a href="https://doi.org/10.1016/j.cma.2023.115893">immersed
+        boundary parametrizations</a>, and the <a href="https://doi.org/10.1016/j.cma.2025.118173">scaled boundary
+        finite element method</a> makes the inversion highly parallel. Real transducers are captured by
+        <a href="https://doi.org/10.1016/j.ultras.2026.108221">distributed source inversion</a>, and a
+        <a href="https://doi.org/10.1016/j.ultras.2025.107705">quantitative study</a> compares full waveform
+        inversion with the total focusing method and reverse time migration using experimental data.</p>
+      </section>
+      <!-- /topic -->
+      <!-- topic: laser-beam-shaping -->
+      <section class="topic">
+        <h3>Laser beam shaping</h3>
+        <p>Laser beam shaping designs the laser's intensity profile to control melt pools and temperatures
+        in powder bed fusion.</p>
+        <figure class="figure">
+          <div class="media">Video</div>
+          <figcaption>Laser beam shaping: an optimized intensity profile and the melt pool it produces.</figcaption>
+        </figure>
+        <p>The beam shape can be <a href="https://doi.org/10.1016/j.addma.2023.103609">optimized for the melt pool
+        geometry</a>, or <a href="https://doi.org/10.1016/j.addma.2026.105206">inverse-designed to follow a
+        prescribed temperature field</a>. <a href="https://doi.org/10.1007/s40192-024-00382-2">Bead-on-plate
+        experiments</a> show how well thermal simulations hold across beam shapes.</p>
+      </section>
+      <!-- /topic -->
+      <!-- topic: dynamic-topology-optimization -->
+      <section class="topic">
+        <h3>Dynamic topology optimization</h3>
+        <p>Dynamic topology optimization designs structures under transient loads, such as waves. Its
+        gradients come from an adjoint simulation that runs backward in time and needs the full forward
+        history, which quickly exceeds available memory. A
+        <a href="https://doi.org/10.1007/s00158-025-04237-y">memory-efficient adjoint method</a> removes this
+        limit and enables billion-parameter optimization on a single GPU.</p>
+        <figure class="figure">
+          <div class="media"><video src="../assets/dynamic-topology-optimization-light.mp4"
+                 data-dark="../assets/dynamic-topology-optimization-dark.mp4"
+                 poster="../assets/dynamic-topology-optimization-light-poster.jpg"
+                 data-dark-poster="../assets/dynamic-topology-optimization-dark-poster.jpg" width="1280" height="320"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="A wave pulse spreading from the left and scattering in an optimized structure on the right, which keeps it from the target region"></video></div>
+          <figcaption>Wave shielding: the optimized structure (right) scatters and traps an incoming pulse before it reaches the target region (dashed).
+          <span class="credit">powered by <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+          </figcaption>
+        </figure>
+        <p>With a neural reparametrization of the design, the optimization also finds
+        <a href="https://doi.org/10.1007/s00158-024-03908-6">better local optima</a>.</p>
+      </section>
+      <!-- /topic -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <!-- papers: category=inverse -->
+      <li>
+        <a href="https://doi.org/10.1007/s00158-025-04237-y">A memory-efficient adjoint method to enable billion parameter optimization on a single GPU in dynamic problems</a>
+        <span class="meta">Structural and Multidisciplinary Optimization, 2026</span>
+        <p>Removes the memory wall of transient adjoints, putting billion-parameter designs on one GPU.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.17157434">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.ultras.2026.108221">Reconstructing effective ultrasound transducer models via distributed source inversion</a>
+        <span class="meta">Ultrasonics, 2026</span>
+        <p>Reconstructs an effective transducer model from measured wavefields, without knowing the transducer's internals.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.ultras.2025.107705">Quantitative comparison of the total focusing method, reverse time migration, and full waveform inversion for ultrasonic imaging</a>
+        <span class="meta">Ultrasonics, 2025</span>
+        <p>Compares total focusing, reverse time migration and full waveform inversion on the same ultrasonic data.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2025.118173">Full-waveform inversion via the scaled boundary finite element method</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2025</span>
+        <p>A scaled boundary formulation for inhomogeneous media that makes full waveform inversion highly parallel.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.14551327">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2024.116999">Shape optimization of embedded solids using implicit Vertex-Morphing</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+        <p>Optimizes the shape of complex solids on a fixed grid, avoiding mesh distortion and re-meshing.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2023.115893">Immersed boundary parametrizations for full waveform inversion</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+        <p>Compares ways of parametrizing an unknown boundary when inverting wave measurements.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2023.116286">Isogeometric multi-resolution full waveform inversion based on the finite cell method</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+        <p>Reconstructs geometry at several resolutions by combining splines with the finite cell method.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.ymssp.2021.108144">Point cloud-based elastic reverse time migration for ultrasonic imaging of components with vertical surfaces</a>
+        <span class="meta">Mechanical Systems and Signal Processing, 2022</span>
+        <p>Images defects in components with vertical surfaces by reverse time migration on point-cloud geometry.</p>
+      </li>
+      <!-- /papers -->
+    </ul>
+  </section>
+
+  <footer>
+    <p><a href="https://www.uni-weimar.de/deib">Chair of Data Science in Civil Engineering</a> · Bauhaus-Universität Weimar</p>
+  </footer>
+</main>
+<script src="../video.js"></script>
+</body>
+</html>

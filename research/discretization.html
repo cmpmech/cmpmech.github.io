@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Discretization technologies: Solving partial differential equations more efficiently.">
+<title>Discretization technologies · Computational Mechanics Weimar</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <a class="back" href="../index.html">← Computational Mechanics</a>
+    <h1>Discretization technologies</h1>
+    <p class="lede">Solving partial differential equations more efficiently.</p>
+  </header>
+
+  <section>
+    <h2>Key works</h2>
+    <div class="topics">
+      <!-- topic: gpu-accelerated-simulation -->
+      <section class="topic">
+        <h3>GPU-accelerated simulation</h3>
+        <p>Graphics cards accelerate highly parallel, repetitive computations, which numerical simulations
+        can exploit for much shorter runtimes.
+        <a href="https://github.com/cmpmech/cuwave">cuwave</a> is a differentiable finite difference code for
+        wave propagation on a single GPU, and <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a> can run parts
+        of its finite element pipeline (matrix-free assembly and iterative solvers) on the GPU.</p>
+        <div class="figure-pair">
+          <figure class="figure">
+            <h4>cuwave</h4>
+            <div class="media"><video src="../assets/statue_wave-light.mp4" data-dark="../assets/statue_wave-dark.mp4"
+                   poster="../assets/statue_wave-light-poster.jpg" data-dark-poster="../assets/statue_wave-dark-poster.jpg"
+                   width="800" height="1280" autoplay muted loop playsinline preload="metadata"
+                   aria-label="Waves propagating through a three-dimensional model of the Discobolus statue"></video></div>
+            <figcaption>Wave propagation in the Discobolus: 28 million degrees of freedom over 1500 time steps, simulated in 0.21&nbsp;s on an NVIDIA RTX&nbsp;5090.
+              <span class="credit">powered by <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <h4>mlhp</h4>
+            <div class="media" style="aspect-ratio: 800 / 1280">Video</div>
+            <figcaption>
+              <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- /topic -->
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <!-- papers: category=discretization -->
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2026.118727">Generalized eigenvalue stabilization for immersed explicit dynamics</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2026</span>
+        <p>Restores usable explicit time steps on badly cut cells by stabilizing the governing eigenvalues.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-025-02704-3">A CFL condition for the finite cell method</a>
+        <span class="meta">Computational Mechanics, 2025</span>
+        <p>Derives the critical time step that explicit time integration must respect on immersed meshes.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.3934/acse.2025007">On the efficiency of explicit and semi-explicit immersed boundary finite element methods for wave propagation problems</a>
+        <span class="meta">Advances in Computational Science and Engineering, 2025</span>
+        <p>Compares explicit and semi-explicit immersed schemes for transient wave problems.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1111/ffe.14623">A Plastic Damage Model With Mixed Isotropic–Kinematic Hardening for Low‐Cycle Fatigue in 7020 Aluminum</a>
+        <span class="meta">Fatigue &amp; Fracture of Engineering Materials &amp; Structures, 2025</span>
+        <p>A plastic damage model with mixed hardening that captures low-cycle fatigue in high-strength aluminum.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.14223186">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-024-02526-9">The discontinuous strain method: accurately representing fatigue and failure</a>
+        <span class="meta">Computational Mechanics, 2025</span>
+        <p>Represents localized failure through a strain discontinuity instead of a smeared damage band.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.10215918">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s10704-025-00870-2">Competition between arbitrarily oriented tunnel cracks and delamination</a>
+        <span class="meta">International Journal of Fracture, 2025</span>
+        <p>Predicts which damage mode wins as tunnel cracks and delamination compete in laminates.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.camwa.2024.02.049">Implicit-explicit time integration for the immersed wave equation</a>
+        <span class="meta">Computers &amp; Mathematics with Applications, 2024</span>
+        <p>Treats only the small cut cells implicitly, keeping the bulk of the mesh explicit and cheap.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2023.116670">Robust numerical integration of embedded solids described in boundary representation</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+        <p>Robust moment-fitting quadrature for cut cells of solids described by boundary meshes.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.17909549">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1080/17455030.2021.1974602">Wave propagation in a three-dimensional half-space with semi-infinite irregularities</a>
+        <span class="meta">Waves in Random and Complex Media, 2024</span>
+        <p>Simulates seismic waves in half-spaces containing semi-infinite irregularities such as valleys.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-023-02392-x">From ductile damage to unilateral contact via a point-wise implicit discontinuity</a>
+        <span class="meta">Computational Mechanics, 2024</span>
+        <p>Carries ductile damage through to crack closure and contact within a single formulation.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2024.116836">On the radial discretization in the frequency-domain SBFEM: Recovering inner-subdomain solutions</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2024</span>
+        <p>Recovers interior solution fields in the scaled boundary method without enlarging the global system.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2023.116029">Performance of acceleration techniques for staggered phase-field solutions</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2023</span>
+        <p>Compares techniques that speed up the slow staggered iterations of phase-field fracture.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/nme.7147">The scaled boundary finite element method for dispersive wave propagation in higher‐order continua</a>
+        <span class="meta">International Journal for Numerical Methods in Engineering, 2023</span>
+        <p>Extends the scaled boundary method to gradient elasticity, capturing dispersive waves in microstructured media.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s10704-022-00685-5">A fracture energy–based viscoelastic–viscoplastic–anisotropic damage model for rate-dependent cracking of concrete</a>
+        <span class="meta">International Journal of Fracture, 2023</span>
+        <p>Models rate-dependent cracking of concrete by combining viscoelasticity, viscoplasticity and anisotropic damage.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00366-022-01684-9">A three-field phase-field model for mixed-mode fracture in rock based on experimental determination of the mode II fracture toughness</a>
+        <span class="meta">Engineering with Computers, 2022</span>
+        <p>A phase-field model with separate tensile and shear cracks, calibrated against experiments on rock.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.jmbbm.2022.105415">Predicting fracture in the proximal humerus using phase field models</a>
+        <span class="meta">Journal of the Mechanical Behavior of Biomedical Materials, 2022</span>
+        <p>Predicts how the proximal humerus fractures using phase-field models.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2022.115575">Efficient multi-level <em>hp</em>-finite elements in arbitrary dimensions</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
+        <p>The data structures and algorithms behind multi-level <em>hp</em>-refinement in any dimension.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2022.114792">The finite cell method with least squares stabilized Nitsche boundary conditions</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2022</span>
+        <p>Least-squares stabilized Nitsche boundary conditions for the finite cell method, with error and conditioning bounds.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/suco.202000779">Fiber bridging in polypropylene‐reinforced high‐strength concrete: An experimental and numerical survey</a>
+        <span class="meta">Structural Concrete, 2022</span>
+        <p>Studies fiber bridging in polypropylene-reinforced concrete through experiments and simulations.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.compscitech.2022.109729">An efficient stiffness degradation model for layered composites with arbitrarily oriented tunneling and delamination cracks</a>
+        <span class="meta">Composites Science and Technology, 2022</span>
+        <p>A cheap model for how cracking degrades laminate stiffness, without resolving every crack.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.5730308">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1093/jom/ufac006">An accurate strategy for computing reaction forces and fluxes on trimmed locally refined meshes</a>
+        <span class="meta">Journal of Mechanics, 2022</span>
+        <p>Computes accurate reaction forces on trimmed, immersed meshes, where classic nodal methods fail.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.engfracmech.2022.108387">A special finite element method applied to off-axis tunnel cracking in laminates</a>
+        <span class="meta">Engineering Fracture Mechanics, 2022</span>
+        <p>A tailored 2D element that captures three-dimensional off-axis tunnel cracks.</p>
+        <span class="pub-links"><a href="https://doi.org/10.5281/zenodo.4421511">Code</a></span>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.camwa.2022.03.008">Enforcing essential boundary conditions on domains defined by point clouds</a>
+        <span class="meta">Computers &amp; Mathematics with Applications, 2022</span>
+        <p>Imposes boundary conditions directly on geometries that are given only as point clouds.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.compositesb.2022.110338">The influence of the fiber–matrix microstructure on the energy release rate of off-axis tunnel cracks in laminates</a>
+        <span class="meta">Composites Part B: Engineering, 2022</span>
+        <p>Quantifies how fiber arrangement at the microscale changes crack driving forces.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s11831-020-09477-3">A Selection of Benchmark Problems in Solid Mechanics and Applied Mathematics</a>
+        <span class="meta">Archives of Computational Methods in Engineering, 2021</span>
+        <p>Benchmark problems in solid mechanics for comparing discretizations and implementations.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-020-01858-6">Hierarchically refined isogeometric analysis of trimmed shells</a>
+        <span class="meta">Computational Mechanics, 2020</span>
+        <p>Local hierarchical refinement for isogeometric analysis of trimmed shells.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-018-1649-7">Phase-field modeling of brittle fracture with multi-level <em>hp</em>-FEM and the finite cell method</a>
+        <span class="meta">Computational Mechanics, 2019</span>
+        <p>Resolves brittle phase-field cracks with multi-level <em>hp</em>-refinement on immersed meshes.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.finel.2019.01.009">Robust and parallel scalable iterative solutions for large-scale finite cell analyses</a>
+        <span class="meta">Finite Elements in Analysis and Design, 2019</span>
+        <p>Robust iterative solvers that scale in parallel for large finite cell analyses.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2019.04.017">Integrating CAD and numerical analysis: ‘Dirty geometry’ handling using the Finite Cell Method</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2019</span>
+        <p>Simulates directly on flawed CAD geometry, tolerating gaps and overlaps, with the finite cell method.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2017.08.017">Multi-level Bézier extraction for hierarchical local refinement of Isogeometric Analysis</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2018</span>
+        <p>Multi-level Bézier extraction for hierarchical local refinement in isogeometric analysis.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/cnm.2951">Multi-level <em>hp</em>-finite cell method for embedded interface problems with application in biomechanics</a>
+        <span class="meta">International Journal for Numerical Methods in Biomedical Engineering, 2018</span>
+        <p>Resolves material interfaces in complex geometry with the multi-level <em>hp</em> finite cell method, applied to biomechanics.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-017-1441-0">Numerical integration of discontinuous functions: moment fitting and smart octree</a>
+        <span class="meta">Computational Mechanics, 2017</span>
+        <p>Integrates discontinuous functions in cut cells by combining moment fitting with smart octrees.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.camwa.2017.01.027">From geometric design to numerical analysis: A direct approach using the Finite Cell Method on Constructive Solid Geometry</a>
+        <span class="meta">Computers &amp; Mathematics with Applications, 2017</span>
+        <p>Analyzes constructive solid geometry models directly with the finite cell method, without meshing.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2016.04.006">Smart octrees: Accurately integrating discontinuous functions in 3D</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2016</span>
+        <p>Integrates discontinuous functions accurately in 3D with octrees that follow the geometry.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2016.07.007">The multi-level <em>hp</em>-method for three-dimensional problems: dynamically changing high-order mesh refinement with arbitrary hanging nodes</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2016</span>
+        <p>Multi-level <em>hp</em>-refinement in 3D with arbitrary hanging nodes and dynamically changing meshes.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.finel.2016.07.001">An easy treatment of hanging nodes in <em>hp</em>-finite elements</a>
+        <span class="meta">Finite Elements in Analysis and Design, 2016</span>
+        <p>A simple treatment of hanging nodes in <em>hp</em>-finite elements.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00466-014-1118-x">Multi-level <em>hp</em>-adaptivity: high-order mesh adaptivity without the difficulties of constraining hanging nodes</a>
+        <span class="meta">Computational Mechanics, 2015</span>
+        <p>High-order mesh adaptivity by superposing refinement levels, avoiding hanging-node constraints.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1186/s40323-015-0031-y">Efficient and accurate numerical quadrature for immersed boundary methods</a>
+        <span class="meta">Advanced Modeling and Simulation in Engineering Sciences, 2015</span>
+        <p>Subdivides cut elements robustly and accurately so that high-order immersed methods keep optimal convergence.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.compstruct.2015.02.002">XFEM analysis of fiber bridging in mixed-mode crack propagation in composites</a>
+        <span class="meta">Composite Structures, 2015</span>
+        <p>Simulates fiber bridging in mixed-mode crack propagation in composites with the extended finite element method.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/nme.4817">Parameter-free, weak imposition of Dirichlet boundary conditions and coupling of trimmed and non-conforming patches</a>
+        <span class="meta">International Journal for Numerical Methods in Engineering, 2015</span>
+        <p>Couples trimmed and non-conforming patches weakly, without penalty parameters or extra unknowns.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.camwa.2015.04.020">Normal contact with high order finite elements and a fictitious contact material</a>
+        <span class="meta">Computers &amp; Mathematics with Applications, 2015</span>
+        <p>Models normal contact with high-order elements through a fictitious contact material.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.advengsoft.2014.04.004">FCMLab: A finite cell research toolbox for MATLAB</a>
+        <span class="meta">Advances in Engineering Software, 2014</span>
+        <p>FCMLab, an open MATLAB toolbox for finite cell research.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2012.05.022">Geometric modeling, isogeometric analysis and the finite cell method</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2012</span>
+        <p>Connects geometric modeling, isogeometric analysis and the finite cell method.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/nme.4269">An efficient integration technique for the voxel‐based finite cell method</a>
+        <span class="meta">International Journal for Numerical Methods in Engineering, 2012</span>
+        <p>Precomputes cell matrices so that voxel-based finite cell models are cheap to integrate.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.camwa.2012.09.002">The Finite Cell Method for linear thermoelasticity</a>
+        <span class="meta">Computers &amp; Mathematics with Applications, 2012</span>
+        <p>Extends the finite cell method to linear thermoelasticity.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1016/j.cma.2011.06.005">Shell Finite Cell Method: A high order fictitious domain approach for thin-walled structures</a>
+        <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2011</span>
+        <p>A high-order fictitious domain approach for thin-walled structures.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00791-012-0175-y">Non-standard bone simulation: interactive numerical analysis by computational steering</a>
+        <span class="meta">Computing and Visualization in Science, 2011</span>
+        <p>Interactive bone simulation, where results update while the user changes the model.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1002/nme.2581">Fixed-grid fluid–structure interaction in two dimensions based on a partitioned Lattice Boltzmann and <em>p</em>-FEM approach</a>
+        <span class="meta">International Journal for Numerical Methods in Engineering, 2009</span>
+        <p>Couples Lattice Boltzmann flow with <em>p</em>-FEM structures for fluid–structure interaction on fixed grids.</p>
+      </li>
+      <!-- /papers -->
+    </ul>
+  </section>
+
+
+  <footer>
+    <p><a href="https://www.uni-weimar.de/deib">Chair of Data Science in Civil Engineering</a> · Bauhaus-Universität Weimar</p>
+  </footer>
+</main>
+<script src="../video.js"></script>
+</body>
+</html>

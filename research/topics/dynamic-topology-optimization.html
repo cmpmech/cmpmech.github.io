@@ -1,0 +1,21 @@
+<section class="topic">
+  <h3>Dynamic topology optimization</h3>
+  <p>Dynamic topology optimization designs structures under transient loads, such as waves. Its
+  gradients come from an adjoint simulation that runs backward in time and needs the full forward
+  history, which quickly exceeds available memory. A
+  <a href="https://doi.org/10.1007/s00158-025-04237-y">memory-efficient adjoint method</a> removes this
+  limit and enables billion-parameter optimization on a single GPU.</p>
+  <figure class="figure">
+    <div class="media"><video src="../assets/dynamic-topology-optimization-light.mp4"
+           data-dark="../assets/dynamic-topology-optimization-dark.mp4"
+           poster="../assets/dynamic-topology-optimization-light-poster.jpg"
+           data-dark-poster="../assets/dynamic-topology-optimization-dark-poster.jpg" width="1280" height="320"
+           autoplay muted loop playsinline preload="metadata"
+           aria-label="A wave pulse spreading from the left and scattering in an optimized structure on the right, which keeps it from the target region"></video></div>
+    <figcaption>Wave shielding: the optimized structure (right) scatters and traps an incoming pulse before it reaches the target region (dashed).
+    <span class="credit">powered by <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+    </figcaption>
+  </figure>
+  <p>With a neural reparametrization of the design, the optimization also finds
+  <a href="https://doi.org/10.1007/s00158-024-03908-6">better local optima</a>.</p>
+</section>

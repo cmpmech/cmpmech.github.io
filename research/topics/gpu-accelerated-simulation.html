@@ -1,0 +1,27 @@
+<section class="topic">
+  <h3>GPU-accelerated simulation</h3>
+  <p>Graphics cards accelerate highly parallel, repetitive computations, which numerical simulations
+  can exploit for much shorter runtimes.
+  <a href="https://github.com/cmpmech/cuwave">cuwave</a> is a differentiable finite difference code for
+  wave propagation on a single GPU, and <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a> can run parts
+  of its finite element pipeline (matrix-free assembly and iterative solvers) on the GPU.</p>
+  <div class="figure-pair">
+    <figure class="figure">
+      <h4>cuwave</h4>
+      <div class="media"><video src="../assets/statue_wave-light.mp4" data-dark="../assets/statue_wave-dark.mp4"
+             poster="../assets/statue_wave-light-poster.jpg" data-dark-poster="../assets/statue_wave-dark-poster.jpg"
+             width="800" height="1280" autoplay muted loop playsinline preload="metadata"
+             aria-label="Waves propagating through a three-dimensional model of the Discobolus statue"></video></div>
+      <figcaption>Wave propagation in the Discobolus: 28 million degrees of freedom over 1500 time steps, simulated in 0.21&nbsp;s on an NVIDIA RTX&nbsp;5090.
+        <span class="credit">powered by <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+      </figcaption>
+    </figure>
+    <figure class="figure">
+      <h4>mlhp</h4>
+      <div class="media" style="aspect-ratio: 800 / 1280">Video</div>
+      <figcaption>
+        <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+      </figcaption>
+    </figure>
+  </div>
+</section>

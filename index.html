@@ -7,185 +7,7 @@
 <title>Computational Mechanics Weimar</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-<style>
-  :root {
-    --paper:   #fbfbfc;
-    --raised:  #ffffff;
-    --ink:     #12161d;
-    --muted:   #5f6a7a;
-    --rule:    #dfe3e9;
-    --accent:  #0b5fa5;
-    --sans: "IBM Plex Sans", ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
-    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper:  #0e1116;
-      --raised: #141922;
-      --ink:    #e7eaef;
-      --muted:  #98a3b3;
-      --rule:   #262d38;
-      --accent: #74b4e8;
-    }
-  }
-  :root[data-theme="dark"] {
-    --paper:  #0e1116;
-    --raised: #141922;
-    --ink:    #e7eaef;
-    --muted:  #98a3b3;
-    --rule:   #262d38;
-    --accent: #74b4e8;
-  }
-
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-  .page {
-    max-width: 44rem;
-    margin: 0 auto;
-    padding-inline: 20px;
-    padding-block: clamp(40px, 9vw, 96px) 64px;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(44px, 7vw, 72px);
-  }
-
-  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-
-  /* masthead */
-  .masthead { display: grid; gap: 14px; }
-  .masthead-text { display: grid; gap: 14px; }
-  .hero { margin: 8px 0 0; width: min(100%, 320px); display: grid; gap: 8px; }
-  .hero video {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    display: block;
-    background: #000033;
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-  }
-  .hero figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
-  @media (min-width: 640px) {
-    .masthead { grid-template-columns: minmax(0, 1fr) 208px; column-gap: 32px; align-items: start; }
-    .hero { margin: 0; width: 100%; }
-  }
-  h1 {
-    font-size: clamp(2rem, 6.5vw, 2.9rem);
-    line-height: 1.08;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    text-wrap: balance;
-    margin: 0;
-  }
-  .lede { margin: 0; max-width: 34em; color: var(--muted); font-size: 1.0625rem; }
-  .lede strong { color: var(--ink); font-weight: 500; }
-
-  /* research areas */
-  h2 {
-    font-size: 0.72rem;
-    font-family: var(--mono);
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 22px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--rule);
-  }
-  .areas { display: grid; gap: 0; }
-  .area { padding-block: 16px; border-bottom: 1px solid var(--rule); }
-  .area:last-child { border-bottom: 0; }
-  .area > summary {
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-  .area-head { display: grid; gap: 2px; }
-  .area-title { font-weight: 600; letter-spacing: -0.005em; }
-  .area > summary::-webkit-details-marker { display: none; }
-  .area > summary::before {
-    content: "+";
-    font-family: var(--mono);
-    font-weight: 400;
-    color: var(--muted);
-    width: 0.8em;
-  }
-  .area[open] > summary::before { content: "\2212"; }
-  .area > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-  .area-note { color: var(--muted); }
-  .pub-list {
-    list-style: none;
-    margin: 16px 0 4px;
-    padding: 0 0 0 calc(0.8em + 10px);
-    display: grid;
-    gap: 14px;
-  }
-  .pub-list li { display: grid; gap: 2px; }
-  .pub-list p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
-  .meta { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
-  .pub-links { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
-
-  /* software */
-  .repos { display: grid; gap: 14px; }
-  .repo {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 3px;
-    padding: 16px 18px;
-    background: var(--raised);
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-  }
-  .repo > a { font-family: var(--mono); font-weight: 500; font-size: 1rem; }
-  .repo a { overflow-wrap: anywhere; }
-  .repo p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
-  .repo em { font-style: italic; }
-  .repo .install {
-    margin-top: 6px;
-    font-size: 0.875rem;
-    color: var(--muted);
-  }
-  .repo .install code {
-    font-family: var(--mono);
-    font-weight: 500;
-    font-size: 0.875rem;
-    color: var(--ink);
-    background: color-mix(in srgb, var(--accent) 10%, transparent);
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    padding: 1px 6px;
-    white-space: nowrap;
-  }
-  .repo--thumb { grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: start; }
-  .repo--thumb .txt { display: grid; gap: 3px; }
-  .repo--thumb .txt > a { font-family: var(--mono); font-weight: 500; font-size: 1rem; }
-  .thumb {
-    width: 76px;
-    height: auto;
-    display: block;
-    border: 1px solid var(--rule);
-    border-radius: 2px;
-  }
-
-  .pubs { margin: 0; color: var(--muted); }
-
-  footer {
-    border-top: 1px solid var(--rule);
-    padding-top: 20px;
-    color: var(--muted);
-    font-size: 0.875rem;
-  }
-  footer p { margin: 0; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="page">
@@ -216,9 +38,10 @@
             <span class="area-title">Discretization technologies</span>
             <span class="area-note">Solving partial differential equations more efficiently.</span>
           </span>
+          <a class="area-more" href="research/discretization.html" aria-label="More on discretization technologies">More →</a>
         </summary>
         <ul class="pub-list">
-          <!-- pubs:discretization:start -->
+          <!-- papers: category=discretization -->
           <li>
             <a href="https://doi.org/10.1016/j.cma.2026.118727">Generalized eigenvalue stabilization for immersed explicit dynamics</a>
             <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2026</span>
@@ -464,7 +287,7 @@
             <span class="meta">International Journal for Numerical Methods in Engineering, 2009</span>
             <p>Couples Lattice Boltzmann flow with <em>p</em>-FEM structures for fluid–structure interaction on fixed grids.</p>
           </li>
-          <!-- pubs:discretization:end -->
+          <!-- /papers -->
         </ul>
       </details>
       <details class="area">
@@ -473,9 +296,10 @@
             <span class="area-title">Inverse problems &amp; optimization</span>
             <span class="area-note">Finding unseen or optimal structures.</span>
           </span>
+          <a class="area-more" href="research/inverse-problems.html" aria-label="More on inverse problems &amp; optimization">More →</a>
         </summary>
         <ul class="pub-list">
-          <!-- pubs:inverse:start -->
+          <!-- papers: category=inverse -->
           <li>
             <a href="https://doi.org/10.1007/s00158-025-04237-y">A memory-efficient adjoint method to enable billion parameter optimization on a single GPU in dynamic problems</a>
             <span class="meta">Structural and Multidisciplinary Optimization, 2026</span>
@@ -518,7 +342,7 @@
             <span class="meta">Mechanical Systems and Signal Processing, 2022</span>
             <p>Images defects in components with vertical surfaces by reverse time migration on point-cloud geometry.</p>
           </li>
-          <!-- pubs:inverse:end -->
+          <!-- /papers -->
         </ul>
       </details>
       <details class="area">
@@ -527,9 +351,10 @@
             <span class="area-title">Additive manufacturing</span>
             <span class="area-note">Certifying and improving 3D printing technologies.</span>
           </span>
+          <a class="area-more" href="research/additive-manufacturing.html" aria-label="More on additive manufacturing">More →</a>
         </summary>
         <ul class="pub-list">
-          <!-- pubs:am:start -->
+          <!-- papers: category=am -->
           <li>
             <a href="https://doi.org/10.1016/j.addma.2026.105243">Scan-based fatigue prediction of DED-Arc additively manufactured steel components</a>
             <span class="meta">Additive Manufacturing, 2026</span>
@@ -641,7 +466,7 @@
             <span class="meta">ACS Applied Materials &amp; Interfaces, 2017</span>
             <p>Combines 3D-printed fibers and polymer networks into strong, stretchable engineered tissues.</p>
           </li>
-          <!-- pubs:am:end -->
+          <!-- /papers -->
         </ul>
       </details>
       <details class="area">
@@ -650,9 +475,10 @@
             <span class="area-title">Scientific machine learning</span>
             <span class="area-note">Accelerating and improving simulations with modern AI methods.</span>
           </span>
+          <a class="area-more" href="research/scientific-machine-learning.html" aria-label="More on scientific machine learning">More →</a>
         </summary>
         <ul class="pub-list">
-          <!-- pubs:sciml:start -->
+          <!-- papers: category=sciml -->
           <li>
             <a href="https://doi.org/10.1007/s00466-026-02796-5">Graph neural networks for full waveform inversion</a>
             <span class="meta">Computational Mechanics, 2026</span>
@@ -698,7 +524,7 @@
             <span class="meta">Journal of Sound and Vibration, 2023</span>
             <p>Reconstructs defects in bonded multi-layer composites from ultrasonic signals with a fully convolutional network.</p>
           </li>
-          <!-- pubs:sciml:end -->
+          <!-- /papers -->
         </ul>
       </details>
     </div>
@@ -774,14 +600,7 @@
     <p><a href="https://www.uni-weimar.de/deib">Chair of Data Science in Civil Engineering</a> · Bauhaus-Universität Weimar</p>
   </footer>
 </main>
-<script>
-  // Respect reduced-motion preferences: show the still poster instead of the animation
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const video = document.querySelector(".hero video");
-    video.removeAttribute("autoplay");
-    video.pause();
-  }
-</script>
+<script src="video.js"></script>
 
 </body>
 </html>

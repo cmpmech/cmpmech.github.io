@@ -1,0 +1,37 @@
+<section class="topic">
+  <h3>Anomaly detection</h3>
+  <p>Generative models can serve as anomaly detectors: a structure that the model cannot generate
+  <a href="https://doi.org/10.1016/j.engappai.2024.108993">is flagged as an anomaly</a>.</p>
+  <figure class="figure">
+    <p class="figure-row-label">Normal data</p>
+    <div class="figure-pair figure-pair--3">
+      <div>
+        <h4>Input</h4>
+        <div class="media"><picture><source srcset="../assets/anomaly_normal_input-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_normal_input-light.png" width="512" height="512" loading="lazy" alt="Microstructure with circular fibers"></picture></div>
+      </div>
+      <div>
+        <h4>Reconstruction</h4>
+        <div class="media"><picture><source srcset="../assets/anomaly_normal_pred-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_normal_pred-light.png" width="512" height="512" loading="lazy" alt="Its reconstruction by the autoencoder, nearly identical"></picture></div>
+      </div>
+      <div>
+        <h4>Error</h4>
+        <div class="media"><picture><source srcset="../assets/anomaly_normal_error-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_normal_error-light.png" width="512" height="512" loading="lazy" alt="Reconstruction error: only faint rings at the fiber boundaries"></picture></div>
+      </div>
+    </div>
+    <p class="figure-row-label">Anomalous data</p>
+    <div class="figure-pair figure-pair--3">
+      <div>
+        <div class="media"><picture><source srcset="../assets/anomaly_anomalous_input-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_anomalous_input-light.png" width="512" height="512" loading="lazy" alt="The same microstructure with five fibers replaced by squares"></picture></div>
+      </div>
+      <div>
+        <div class="media"><picture><source srcset="../assets/anomaly_anomalous_pred-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_anomalous_pred-light.png" width="512" height="512" loading="lazy" alt="Its reconstruction: the autoencoder turns the squares back into circles"></picture></div>
+      </div>
+      <div>
+        <div class="media"><picture><source srcset="../assets/anomaly_anomalous_error-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/anomaly_anomalous_error-light.png" width="512" height="512" loading="lazy" alt="Reconstruction error: the corners of the squares stand out"></picture></div>
+      </div>
+    </div>
+    <figcaption>Anomaly detection: an autoencoder trained only on circular fibers reconstructs squares as circles, so its reconstruction error flags them.
+    <span class="credit">powered by <a href="https://github.com/cmpmech/neuralmech">neuralmech</a></span>
+    </figcaption>
+  </figure>
+</section>

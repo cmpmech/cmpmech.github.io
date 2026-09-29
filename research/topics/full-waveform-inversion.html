@@ -1,0 +1,30 @@
+<section class="topic">
+  <h3>Full waveform inversion</h3>
+  <p>Full waveform inversion reconstructs hidden defects from ultrasonic wave measurements: the
+  material distribution is adapted until the simulated waves match the measured ones.</p>
+  <figure class="figure">
+    <div class="figure-pair figure-pair--3">
+      <div>
+        <h4>Measurement</h4>
+        <div class="media"><video src="../assets/neuralfwi_wave-light.mp4" data-dark="../assets/neuralfwi_wave-dark.mp4" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Waves travelling through the specimen and scattering at four circular voids, recorded by sensors along the top"></video></div>
+      </div>
+      <div>
+        <h4>Reconstruction</h4>
+        <div class="media"><video src="../assets/neuralfwi_voxel-light.mp4" data-dark="../assets/neuralfwi_voxel-dark.mp4" poster="../assets/neuralfwi_voxel-light.png" data-dark-poster="../assets/neuralfwi_voxel-dark.png" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Pixel-based inversion over the iterations, converging to a noisy reconstruction"></video></div>
+      </div>
+      <div>
+        <h4>Regularization</h4>
+        <div class="media"><video src="../assets/neuralfwi_projection-light.mp4" data-dark="../assets/neuralfwi_projection-dark.mp4" poster="../assets/neuralfwi_projection-light.png" data-dark-poster="../assets/neuralfwi_projection-dark.png" width="512" height="512" autoplay muted loop playsinline preload="metadata" aria-label="Inversion with a regularizing projection over the iterations, converging to sharper voids on a cleaner background"></video></div>
+      </div>
+    </div>
+    <figcaption>Full waveform inversion: waves scattered by hidden voids reveal their shape.
+      <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a> · <a href="https://github.com/cmpmech/cuwave">cuwave</a></span>
+    </figcaption>
+  </figure>
+  <p>The unknown defects can be described with <a href="https://doi.org/10.1016/j.cma.2023.115893">immersed
+  boundary parametrizations</a>, and the <a href="https://doi.org/10.1016/j.cma.2025.118173">scaled boundary
+  finite element method</a> makes the inversion highly parallel. Real transducers are captured by
+  <a href="https://doi.org/10.1016/j.ultras.2026.108221">distributed source inversion</a>, and a
+  <a href="https://doi.org/10.1016/j.ultras.2025.107705">quantitative study</a> compares full waveform
+  inversion with the total focusing method and reverse time migration using experimental data.</p>
+</section>

@@ -11,7 +11,8 @@ A static site: plain HTML plus `style.css`, with no build step except the public
   `prefers-color-scheme`.
 - `video.js` handles autoplaying videos: it respects reduced motion and switches to the
   `data-dark` / `data-dark-poster` source in dark mode.
-- `assets/` holds the media. `consistency/` holds the shared figure settings.
+- `assets/` holds the media. It is not tracked on `main` (see *Deployment*). `consistency/` holds the
+  shared figure settings.
 
 ## Publications
 - `publications/scholars.csv` lists the people to crawl. `publications/publications.csv` has one
@@ -39,3 +40,15 @@ A static site: plain HTML plus `style.css`, with no build step except the public
   - It ends with `<span class="credit">powered by <a>neuralmech</a> · <a>mlhp</a> · <a>cuwave</a></span>`,
     listing the tools that actually produced the figure.
 - Keep all `assets/` referenced: delete unused files and verify there are no broken paths.
+
+## Deployment
+- `main` holds the pages, and `assets/` is git-ignored. The media lives on the orphan `assets` branch
+  as a single commit that is replaced on every publish, so git keeps no asset history.
+- `.github/workflows/pages.yml` deploys `main` with the `assets` branch checked out into `assets/`, on
+  every push to either branch.
+- After changing anything in `assets/`, run `./publish_assets.sh`. It refuses to publish broken or
+  unreferenced paths, does nothing if the assets are unchanged, and otherwise force-pushes the new
+  `assets` commit.
+- On a fresh clone, fetch the media with
+  `git fetch origin assets && mkdir -p assets && git archive FETCH_HEAD | tar -x -C assets`.
+- Never commit media to `main`.

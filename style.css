@@ -209,6 +209,7 @@ footer p { margin: 0; }
 .figure-pair h4 { margin: 0 0 6px; font-family: var(--mono); font-size: 0.72rem; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
 @media (min-width: 480px) { .figure-pair { grid-template-columns: 1fr 1fr; } }
 .figure-pair.figure-pair--3 { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+@media (min-width: 480px) { .figure-pair.figure-pair--square-wide { grid-template-columns: minmax(0, 9fr) minmax(0, 16fr); } }   /* a square video beside a 16:9 one, at equal height */
 @media (max-width: 479px) { .figure-pair--3 h4 { font-size: 0.6rem; letter-spacing: 0; } }
 .figure-row-label { margin: 4px 0 -2px; font-family: var(--mono); font-size: 0.72rem; font-weight: 500; color: var(--ink); }
 .figure figcaption, .hero figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }

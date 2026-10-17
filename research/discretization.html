@@ -52,6 +52,37 @@
         </div>
       </section>
       <!-- /topic -->
+      <!-- topic: phase-field-fracture -->
+      <section class="topic">
+        <h3>Phase-field fracture</h3>
+        <p>Phase-field models describe discrete cracks as a narrow band of damage.
+        <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a> supports the most common phase-field fracture models with
+        adaptive refinement, as well as GPU acceleration to limit computational effort.</p>
+        <div class="figure-pair figure-pair--square-wide">
+          <figure class="figure">
+            <h4>refinement</h4>
+            <div class="media"><video src="../assets/shear-refinement-light.mp4" data-dark="../assets/shear-refinement-dark.mp4"
+                   poster="../assets/shear-refinement-light-poster.jpg" data-dark-poster="../assets/shear-refinement-dark-poster.jpg"
+                   width="720" height="720" autoplay muted loop playsinline preload="metadata"
+                   aria-label="A crack grows from a notch in a square plate under shear; the refined mesh moves with the crack tip"></video></div>
+            <figcaption>Adaptive refinement: the mesh follows the crack tip and coarsens behind it, so the computation stays small.
+              <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+            </figcaption>
+          </figure>
+          <figure class="figure">
+            <h4>as-built</h4>
+            <div class="media"><video src="../assets/fracture45-light.mp4" data-dark="../assets/fracture45-dark.mp4"
+                   poster="../assets/fracture45-light-poster.jpg" data-dark-poster="../assets/fracture45-dark-poster.jpg"
+                   width="1280" height="720" autoplay muted loop playsinline preload="metadata"
+                   aria-label="A notched concrete prism with print layers at 45 degrees breaks in three-point bending; the two halves open to show the crack faces"></video></div>
+            <figcaption>From CT scan to crack path: a 3D-printed concrete prism simulated on its scanned, as-built geometry
+              with 914 million degrees of freedom, 136 load steps in 21&nbsp;min on an NVIDIA RTX&nbsp;5090.
+              <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- /topic -->
     </div>
   </section>
 
@@ -63,6 +94,11 @@
         <a href="https://doi.org/10.1016/j.cma.2026.118727">Generalized eigenvalue stabilization for immersed explicit dynamics</a>
         <span class="meta">Computer Methods in Applied Mechanics and Engineering, 2026</span>
         <p>Restores usable explicit time steps on badly cut cells by stabilizing the governing eigenvalues.</p>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1007/s00366-026-02436-9">Efficient finite element quadrature on immersed voxel data</a>
+        <span class="meta">Engineering with Computers, 2026</span>
+        <p>Fits a custom quadrature rule per element to CT voxel data, so refined and high-order elements integrate scans exactly with few points.</p>
       </li>
       <li>
         <a href="https://doi.org/10.1007/s00466-025-02704-3">A CFL condition for the finite cell method</a>

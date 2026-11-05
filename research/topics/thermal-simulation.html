@@ -1,0 +1,24 @@
+<section class="topic">
+  <h3>Thermal simulation</h3>
+  <p>Thermal simulation predicts the transient temperature field and melt pool for a given laser beam
+  shape and scan path. <a href="https://doi.org/10.1007/s00366-022-01719-1">Adaptive space-time
+  <em>hp</em>-finite elements</a> resolve the moving laser at micrometre scale, and a
+  <a href="https://doi.org/10.1007/s40192-019-00132-9">nonlinear model with phase changes</a> predicts the
+  melt pool shape. <a href="https://doi.org/10.1007/s40192-025-00430-5">Thermography</a>,
+  <a href="https://doi.org/10.1007/s40192-024-00382-2">bead-on-plate experiments</a> and
+  <a href="https://doi.org/10.1007/s40964-025-01147-9">rapid laser turnarounds</a> test how far purely
+  thermal models can be trusted.</p>
+  <figure class="figure">
+    <div class="media"><video src="../assets/thermal-simulation-light.mp4"
+           data-dark="../assets/thermal-simulation-dark.mp4"
+           poster="../assets/thermal-simulation-light-poster.jpg"
+           data-dark-poster="../assets/thermal-simulation-dark-poster.jpg" width="1280" height="900"
+           autoplay muted loop playsinline preload="metadata"
+           aria-label="Top view of an 18-track laser scan: the surface heats up and the melt-pool outlines freeze in behind the laser; a wipe then reveals the micrograph of the printed sample, whose melt-pool ripples match the simulated ones"></video></div>
+    <figcaption><a href="https://doi.org/10.1007/s40964-025-01147-9">The trace of heat</a>: an 18-track scan
+    with rapid turnarounds, simulated (white lines: melt-pool outlines frozen in behind the laser) and compared
+    with the bright-field micrograph of the printed sample (experiment: NIST).
+    <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+    </figcaption>
+  </figure>
+</section>

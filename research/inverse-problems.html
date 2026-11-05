@@ -61,6 +61,39 @@
         geometry</a>, or <a href="https://doi.org/10.1016/j.addma.2026.105206">inverse-designed to follow a
         prescribed temperature field</a>. <a href="https://doi.org/10.1007/s40192-024-00382-2">Bead-on-plate
         experiments</a> show how well thermal simulations hold across beam shapes.</p>
+        <p>Letting the beam shape change along the scan path goes one step further. In a multi-track scan, heat
+        builds up from track to track, and a static beam's melt pool grows. Dynamic beam shaping optimizes the
+        intensity profile in space and time, with adjoint-based gradients, so that every track keeps the melt
+        pool width and depth of the first one. For a Gaussian beam, the melt pool would otherwise grow by
+        175&nbsp;% in width and 35&nbsp;% in depth over ten tracks; the optimized dynamic beam keeps it nearly
+        constant.</p>
+        <figure class="figure">
+          <div class="media"><video src="../assets/laser-beam-shaping-light.mp4"
+                 data-dark="../assets/laser-beam-shaping-dark.mp4"
+                 poster="../assets/laser-beam-shaping-light-poster.jpg"
+                 data-dark-poster="../assets/laser-beam-shaping-dark-poster.jpg" width="1280" height="760"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Ten laser tracks on a metal plate, scanned once with a stationary Gaussian beam and once with an optimized dynamic beam; below, the cross-sections of the stationary melt tracks grow wider and deeper while the optimized ones stay uniform"></video></div>
+          <figcaption>Gaussian beam: the same ten-track scan with a stationary beam (left) and an optimized dynamic
+          beam (right). The cross-sections at the dashed line show how heat build-up enlarges the stationary melt
+          tracks, while the optimized beam keeps them uniform.
+          <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+          </figcaption>
+        </figure>
+        <p>The same works for non-Gaussian beams. A chair-shaped beam,
+        <a href="https://doi.org/10.1016/j.addma.2026.105206">inverse-designed for a rectangular melt track</a>, loses that shape as heat builds up; its optimized dynamic version keeps every track rectangular.</p>
+        <figure class="figure">
+          <div class="media"><video src="../assets/laser-beam-shaping-chair-light.mp4"
+                 data-dark="../assets/laser-beam-shaping-chair-dark.mp4"
+                 poster="../assets/laser-beam-shaping-chair-light-poster.jpg"
+                 data-dark-poster="../assets/laser-beam-shaping-chair-dark-poster.jpg" width="1280" height="660"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Ten laser tracks scanned with a stationary and an optimized dynamic chair-shaped beam; below, the stationary melt-track cross-sections lose their rectangular shape while the optimized ones stay rectangular"></video></div>
+          <figcaption>Chair-shaped beam: a stationary (left) and an optimized dynamic beam (right). The cross-sections
+          show the stationary tracks distorting from the intended rectangle, while the optimized beam preserves it.
+          <span class="credit">powered by <a href="https://gitlab.com/hpfem/code/mlhp">mlhp</a></span>
+          </figcaption>
+        </figure>
       </section>
       <!-- /topic -->
       <!-- topic: dynamic-topology-optimization -->

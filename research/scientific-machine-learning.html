@@ -125,6 +125,31 @@
         </figure>
       </section>
       <!-- /topic -->
+      <!-- topic: data-driven-plasticity -->
+            <!-- /topic -->
+            <!-- topic: data-driven-plasticity -->
+            <section class="topic">
+              <h3>Data-driven multiscale plasticity</h3>
+              <p>Concurrent multiscale (FE<sup>2</sup>) simulations of plasticity are often bottlenecked by expensive fine-scale solves. A <a href="https://doi.org/10.1007/s00466-026-02849-9">neural-network surrogate</a> structured to mirror classical return-mapping updates can replace traditional FFT homogenization at the meso-scale, reducing per-analysis costs from hours to seconds with speed-ups up to tens of thousands.</p>
+              <figure class="figure">
+                <div class="media"><img src="../assets/data-driven-plasticity-light.svg" data-dark="../assets/data-driven-plasticity-dark.svg"                width="1200" height="800" loading="lazy"
+                      alt="Neural network surrogate workflow replacing microscale analyses in multiscale simulations"></div>
+                  <figcaption>
+                        Multiscale representation for computational plasticity: on the left, an open-cell molybdenum foam microstructure 
+                        [<a href="https://doi.org/10.1088/1742-6596/165/1/012061">Stephani et al., 2009</a>, <a href="https://publica.fraunhofer.de/handle/publica/368609">2010</a>]; on the right, a corresponding two-dimensional 
+                        representative volume element (RVE) with the solid phase in white and pore space in black used for homogenization.
+                  </figcaption>
+                </figure>
+              <figure class="figure">
+              <div class="media"><video src="../assets/data-driven-plasticity-light.mp4" data-dark="../assets/data-driven-plasticity-dark.mp4"
+                    poster="../assets/data-driven-plasticity-light-poster.png" data-dark-poster="../assets/data-driven-plasticity-dark-poster.png"
+                    width="900" height="600" autoplay muted loop playsinline preload="metadata"
+                    aria-label="A neural network gradually learning to reproduce a photo of a Weimar facade"></video></div>
+                <figcaption>Schematic of the concurrent two-scale coupling: the macro-scale boundary value problem provides the macro-scale strain to the fine-scale model, which returns the homogenized stress. A neural-network surrogate replaces expensive fine-scale simulation by learning the material constitutive law.
+              </figure>
+              <p>The complete workflow in our methodology using a <a href="https://doi.org/10.1007/s00466-026-02849-9">neural-network surrogate</a> covers training data generation from incremental homogenization, compact dataset construction, embedding material symmetries, and deploying the trained network as a user-defined material subroutine (UMAT) in standard finite-element solvers. By eliminating the storage of extensive microscale state variables, this approach opens the door to high-fidelity discretizations across general dimensionalities and symmetry assumptions.</p>
+            </section>
+      <!-- /topic -->
       <!-- topic: methodological-overview -->
       <section class="topic">
         <h3>Methodological overview</h3>

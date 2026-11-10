@@ -119,6 +119,20 @@
         <a href="https://doi.org/10.1007/s00158-024-03908-6">better local optima</a>.</p>
       </section>
       <!-- /topic -->
+      <!-- topic: fwi-sbfem -->
+      <section class="topic">
+        <h3>Full waveform inversion via the scaled-boundary FEM </h3>
+        <p>To advance non-destructive evaluation and flaw detection in complex structures, we present a novel <a href="https://doi.org/10.1016/j.cma.2025.118173">scaled boundary finite element formulation</a> for time-domain wave propagation in inhomogeneous media. By lifting the conventional assumption of constant material properties along the radial coordinate within elements and employing finite differences to resolve spatial variations, the computational load is effectively decomposed into independent local problems and a single coupled global system.</p>
+        <figure class="figure">
+        <div class="media"><video src="../assets/fwi-sbfem-light.mp4" data-dark="../assets/fwi-sbfem-dark.mp4"
+              poster="../assets/fwi-sbfem-light-poster.png" data-dark-poster="../assets/fwi-sbfem-dark-poster.png"
+              width="900" height="600" autoplay muted loop playsinline preload="metadata"
+              aria-label="Density reconstruction of a non-prismatic pillar cross-section with random cavities using FWI"></video></div>
+          <figcaption>Reconstruction of the density distribution for a horizontal cross-section of a non-prismatic pillar containing randomly distributed cavities. The left panel shows the geometric layout with internal cavities and source locations, while the right panel displays the normalized reconstructed density contour, where the colors at the extremes of the scale, black and white, represent densities of zero and 1.5, respectively, and the blue spectrum shows the values in between.</figcaption>
+        </figure>
+        <p>The derivation establishes a scaled boundary semi-weak form of the scalar wave equation in heterogeneous media via the Galerkin method, integrated with the adjoint approach for time-domain full-waveform inversion. By incorporating an algorithmic condensation procedure to compute dynamic stiffness matrices on the fly and utilizing a limited-memory BFGS optimization algorithm, the framework achieves exceptional reconstruction quality and scalability.</p>
+      </section>
+      <!-- /topic -->
     </div>
   </section>
 

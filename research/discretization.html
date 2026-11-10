@@ -88,10 +88,10 @@
     </div>
   </section>
   <!-- /topic -->
-  <!-- topic: low-cycle-fatigue-plastic-damage -->
+  <!-- topic: low-cycle-fatigue -->
   <section class="topic">
     <h3>Low-cycle fatigue analysis</h3>
-    <p>Predicting low-cycle fatigue failure in ductile materials requires capturing complex cyclic interactions between plasticity and material degradation. A <a href="https://doi.org/10.1111/ffe.14623">plastic damage model</a> featuring Chaboche-type mixed isotropic--kinematic hardening augmented by a spectral stress-split damage formulation accurately reproduces stiffness degradation and peak stress drop in high-strength aluminum under extreme plastic strains.</p>
+    <p>Predicting low-cycle fatigue failure in ductile materials requires capturing complex cyclic interactions between plasticity and material degradation. A <a href="https://doi.org/10.1111/ffe.14623">plastic damage model</a> featuring Chaboche-type mixed isotropic&ndash;kinematic hardening augmented by a spectral stress-split damage formulation accurately reproduces stiffness degradation and peak stress drop in high-strength aluminum under extreme plastic strains.</p>
     <figure class="figure">
       <div class="media">
         <video src="../assets/low-cycle-fatigue-light.mp4" data-dark="../assets/low-cycle-fatigue-dark.mp4"
@@ -100,11 +100,12 @@
                 aria-label="Cyclic loading animation of a compact tension specimen showing force-COD response alongside developing plastic damage"></video>
       </div>
       <figcaption>
-        Cyclic loading of a compact tension (CT) specimen: on the left, the evolution of the force (in kilonewtons) versus crack opening displacement (COD, in millimeters); on the right, the synchronized deformation field showing non-local plastic strain growth originating at the notch tip and progressing along the crack path.
+        Cyclic loading of a compact tension (CT) specimen: on the left, the evolution of the force (in kilonewtons) versus crack opening displacement (COD, in millimeters); on the right, the synchronized deformation showing non-local plastic strain growth originating at the notch tip and progressing along the crack path.
       </figcaption>
     </figure>
     <p>The model incorporates a nonlinear activation function to smoothly distinguish between tensile and compressive states, alongside distinct damage indices for the volumetric and deviatoric stress components. Calibrated against experimental data, this constitutive framework enables robust finite-element simulations of structural components subjected to severe cyclic fatigue loading without numerical instabilities during crack propagation.</p>
   </section>
+  <!-- /topic -->
   <section>
     <h2>Publications</h2>
     <ul class="pub-list">

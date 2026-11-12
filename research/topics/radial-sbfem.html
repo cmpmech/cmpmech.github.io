@@ -1,0 +1,12 @@
+<section class="topic">
+  <h3>Radial discretization in the scaled-boundary FEM</h3>
+  <p>The scaled boundary finite element method is renowned for its capacity to reproduce highly detailed solution fields over large subdomains and its flexibility in handling arbitrary boundary elements and hanging nodes. However, recovering inner-subdomain fields in cases lacking a closed-form solution traditionally requires expensive cascading computations. To harvest the full potential of the method, we propose a <a href="https://doi.org/10.1016/j.cma.2024.116836">novel solution scheme</a> that allows interior fields to be recovered locally without introducing auxiliary variables or altering the dimensions of the global algebraic system.</p>
+  <figure class="figure">
+    <div class="media"><video src="../assets/radial-sbfem-light.mp4" data-dark="../assets/radial-sbfem-dark.mp4"
+        poster="../assets/radial-sbfem-light-poster.png" data-dark-poster="../assets/radial-sbfem-dark-poster.png"
+        width="900" height="600" autoplay muted loop playsinline preload="metadata"
+        aria-label="Inner-subdomain solution recovery and wave propagation results for frequency-domain SBFEM"></video></div>
+    <figcaption>A representative result of the radial discretization framework for elastodynamic problems in the frequency domain: the left panel illustrates a viscoelastic half-space subjected to a vibrating strip load on its surface, and the right panel presents the corresponding harmonic response in the frequency domain using a single scaled-boundary finite element.</figcaption>
+  </figure>
+  <p>By discretizing the local radial direction via central differencing, dynamic stiffness matrices for bounded and unbounded subdomains are extracted directly from the second-order differential equations. Because computations are carried out independently on the element level prior to global assembly, the method is embarrassingly parallelizable. Validated against reference solutions, the approach achieves quadratic convergence when utilizing second-order discretization in both circumferential and radial directions.</p>
+</section>
